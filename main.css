@@ -1,0 +1,123 @@
+.button {
+  display: inline-block;
+  padding: 8px 32px;
+  border: 1px solid #DDD;
+  background-color: #DDD;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.4s ease-in-out;
+}
+.button:hover {
+  background-color: #CCC;
+}
+.button.button-facebook {
+  background-color: #3B5998;
+  border-color: #3B5998;
+  color: #FFF;
+}
+.button.button-facebook:hover {
+  background-color: #30487d;
+  border-color: #30487d;
+}
+.button.button-email {
+  background-color: #FFF;
+  border-color: #34B7F1;
+}
+.button.button-email:hover {
+  background-color: rgba(52, 183, 241, 0.04);
+  border-color: #34A3F1;
+}
+.button.button-twitter {
+  background-color: #00ACEE;
+  border-color: #00ACEE;
+  color: #FFF;
+}
+.button.button-twitter:hover {
+  background-color: #009DDB;
+  border-color: #009DDB;
+}
+.button.button-tumblr {
+  background-color: #36465D;
+  border-color: #36465D;
+  color: #FFF;
+}
+.button.button-tumblr:hover {
+  background-color: #14141D;
+  border-color: #14141D;
+}
+.button.button-pinterest {
+  background-color: #E60023;
+  border-color: #E60023;
+  color: #FFF;
+}
+.button.button-pinterest:hover {
+  background-color: #D3001F;
+  border-color: #D3001F;
+}
+.button.button-linkedin {
+  background-color: #00A0DC;
+  border-color: #00A0DC;
+  color: #FFF;
+}
+.button.button-linkedin:hover {
+  background-color: #0077B5;
+  border-color: #0077B5;
+}
+.button.button-reddit {
+  background-color: #FF4500;
+  border-color: #FF4500;
+  color: #FFF;
+}
+.button.button-reddit:hover {
+  background-color: #D33B00;
+  border-color: #D33B00;
+}
+.button.button-whatsapp {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  color: #FFF;
+}
+.button.button-whatsapp:hover {
+  background-color: #075E54;
+  border-color: #075E54;
+}
+.button.button-pocket {
+  background-color: #EE4056;
+  border-color: #EE4056;
+  color: #FFF;
+}
+.button.button-pocket:hover {
+  background-color: #DE142D;
+  border-color: #DE142D;
+}
+.button.button-copy {
+  background-color: #10B981;
+  border-color: #10B981;
+  color: #FFF;
+}
+.button.button-copy:hover {
+  background-color: #059669;
+  border-color: #059669;
+}
+.button.is-rounded {
+  border-radius: 5px;
+}
+.button svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.slide-up-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-up-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-up-fade-enter-from,
+.slide-up-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}

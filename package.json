@@ -1,0 +1,32 @@
+{
+  "name": "share-button-links",
+  "version": "1.0.0-alpha",
+  "description": "Share buttons links for websites, blogs and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IsraelDCastro/share-button-links.git"
+  },
+  "keywords": [
+    "Buttons",
+    "Share",
+    "Links",
+    "URL",
+    "Vue",
+    "Vue3",
+    "VueJS"
+  ],
+  "author": {
+    "name": "Israel De Castro Alfonso",
+    "email": "israeldalfons@gmail.com",
+    "url": "https://castrodev.netlify.app/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsraelDCastro/share-button-links/issues"
+  },
+  "homepage": "https://github.com/IsraelDCastro/share-button-links#readme"
+}

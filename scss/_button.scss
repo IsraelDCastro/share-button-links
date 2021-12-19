@@ -1,0 +1,132 @@
+.button {
+  display: inline-block;
+  padding: 8px 32px;
+  border: 1px solid #DDD;
+  background-color: #DDD;
+  text-decoration: none;
+  color: #222;
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    background-color: #CCC;
+  }
+
+  &.button-facebook {
+    background-color: $c-fabecook-100;
+    border-color: $c-fabecook-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-fabecook-200;
+      border-color: $c-fabecook-200;
+    }
+  }
+
+  &.button-email {
+    background-color: #FFF;
+    border-color: $c-email-100;
+
+    &:hover {
+      background-color: rgba($c-email-100, .04);
+      border-color: $c-email-200;
+    }
+  }
+
+  &.button-twitter {
+    background-color: $c-twitter-100;
+    border-color: $c-twitter-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-twitter-200;
+      border-color: $c-twitter-200;
+    }
+  }
+
+  &.button-tumblr {
+    background-color: $c-tumblr-100;
+    border-color: $c-tumblr-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-tumblr-200;
+      border-color: $c-tumblr-200;
+    }
+  }
+
+  &.button-pinterest {
+    background-color: $c-pinterest-100;
+    border-color: $c-pinterest-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-pinterest-200;
+      border-color: $c-pinterest-200;
+    }
+  }
+
+  &.button-linkedin {
+    background-color: $c-linkedin-100;
+    border-color: $c-linkedin-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-linkedin-200;
+      border-color: $c-linkedin-200;
+    }
+  }
+
+  &.button-reddit {
+    background-color: $c-reddit-100;
+    border-color: $c-reddit-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-reddit-200;
+      border-color: $c-reddit-200;
+    }
+  }
+
+  &.button-whatsapp {
+    background-color: $c-whatsapp-100;
+    border-color: $c-whatsapp-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-whatsapp-200;
+      border-color: $c-whatsapp-200;
+    }
+  }
+
+  &.button-pocket {
+    background-color: $c-pocket-100;
+    border-color: $c-pocket-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-pocket-200;
+      border-color: $c-pocket-200;
+    }
+  }
+
+  &.button-copy {
+    background-color: $c-copy-100;
+    border-color: $c-copy-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-copy-200;
+      border-color: $c-copy-200;
+    }
+  }
+
+  &.is-rounded {
+    border-radius: 5px;
+  }
+
+  svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+  }
+}

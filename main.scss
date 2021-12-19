@@ -1,0 +1,16 @@
+@import "./scss/variables";
+@import "./scss/button";
+
+.slide-up-fade-enter-active {
+  transition: all .3s ease-out;
+}
+
+.slide-up-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-up-fade-enter-from,
+.slide-up-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
