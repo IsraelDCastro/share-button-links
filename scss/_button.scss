@@ -1,4 +1,4 @@
-.button {
+.btn-link {
   display: inline-block;
   padding: 8px 32px;
   border: 1px solid #DDD;
@@ -11,7 +11,7 @@
     background-color: #CCC;
   }
 
-  &.button-facebook {
+  &.btn-link-facebook {
     background-color: $c-fabecook-100;
     border-color: $c-fabecook-100;
     color: #FFF;
@@ -22,7 +22,7 @@
     }
   }
 
-  &.button-email {
+  &.btn-link-email {
     background-color: #FFF;
     border-color: $c-email-100;
 
@@ -32,7 +32,7 @@
     }
   }
 
-  &.button-twitter {
+  &.btn-link-twitter {
     background-color: $c-twitter-100;
     border-color: $c-twitter-100;
     color: #FFF;
@@ -43,7 +43,7 @@
     }
   }
 
-  &.button-tumblr {
+  &.btn-link-tumblr {
     background-color: $c-tumblr-100;
     border-color: $c-tumblr-100;
     color: #FFF;
@@ -54,7 +54,7 @@
     }
   }
 
-  &.button-pinterest {
+  &.btn-link-pinterest {
     background-color: $c-pinterest-100;
     border-color: $c-pinterest-100;
     color: #FFF;
@@ -65,7 +65,7 @@
     }
   }
 
-  &.button-linkedin {
+  &.btn-link-linkedin {
     background-color: $c-linkedin-100;
     border-color: $c-linkedin-100;
     color: #FFF;
@@ -76,7 +76,7 @@
     }
   }
 
-  &.button-reddit {
+  &.btn-link-reddit {
     background-color: $c-reddit-100;
     border-color: $c-reddit-100;
     color: #FFF;
@@ -87,7 +87,7 @@
     }
   }
 
-  &.button-whatsapp {
+  &.btn-link-whatsapp {
     background-color: $c-whatsapp-100;
     border-color: $c-whatsapp-100;
     color: #FFF;
@@ -98,7 +98,7 @@
     }
   }
 
-  &.button-pocket {
+  &.btn-link-pocket {
     background-color: $c-pocket-100;
     border-color: $c-pocket-100;
     color: #FFF;
@@ -109,7 +109,7 @@
     }
   }
 
-  &.button-copy {
+  &.btn-link-copy {
     background-color: $c-copy-100;
     border-color: $c-copy-100;
     color: #FFF;

@@ -1,4 +1,4 @@
-.button {
+.btn-link {
   display: inline-block;
   padding: 8px 32px;
   border: 1px solid #DDD;
@@ -7,102 +7,102 @@
   color: #222;
   transition: all 0.4s ease-in-out;
 }
-.button:hover {
+.btn-link:hover {
   background-color: #CCC;
 }
-.button.button-facebook {
+.btn-link.btn-link-facebook {
   background-color: #3B5998;
   border-color: #3B5998;
   color: #FFF;
 }
-.button.button-facebook:hover {
+.btn-link.btn-link-facebook:hover {
   background-color: #30487d;
   border-color: #30487d;
 }
-.button.button-email {
+.btn-link.btn-link-email {
   background-color: #FFF;
   border-color: #34B7F1;
 }
-.button.button-email:hover {
+.btn-link.btn-link-email:hover {
   background-color: rgba(52, 183, 241, 0.04);
   border-color: #34A3F1;
 }
-.button.button-twitter {
+.btn-link.btn-link-twitter {
   background-color: #00ACEE;
   border-color: #00ACEE;
   color: #FFF;
 }
-.button.button-twitter:hover {
+.btn-link.btn-link-twitter:hover {
   background-color: #009DDB;
   border-color: #009DDB;
 }
-.button.button-tumblr {
+.btn-link.btn-link-tumblr {
   background-color: #36465D;
   border-color: #36465D;
   color: #FFF;
 }
-.button.button-tumblr:hover {
+.btn-link.btn-link-tumblr:hover {
   background-color: #14141D;
   border-color: #14141D;
 }
-.button.button-pinterest {
+.btn-link.btn-link-pinterest {
   background-color: #E60023;
   border-color: #E60023;
   color: #FFF;
 }
-.button.button-pinterest:hover {
+.btn-link.btn-link-pinterest:hover {
   background-color: #D3001F;
   border-color: #D3001F;
 }
-.button.button-linkedin {
+.btn-link.btn-link-linkedin {
   background-color: #00A0DC;
   border-color: #00A0DC;
   color: #FFF;
 }
-.button.button-linkedin:hover {
+.btn-link.btn-link-linkedin:hover {
   background-color: #0077B5;
   border-color: #0077B5;
 }
-.button.button-reddit {
+.btn-link.btn-link-reddit {
   background-color: #FF4500;
   border-color: #FF4500;
   color: #FFF;
 }
-.button.button-reddit:hover {
+.btn-link.btn-link-reddit:hover {
   background-color: #D33B00;
   border-color: #D33B00;
 }
-.button.button-whatsapp {
+.btn-link.btn-link-whatsapp {
   background-color: #128C7E;
   border-color: #128C7E;
   color: #FFF;
 }
-.button.button-whatsapp:hover {
+.btn-link.btn-link-whatsapp:hover {
   background-color: #075E54;
   border-color: #075E54;
 }
-.button.button-pocket {
+.btn-link.btn-link-pocket {
   background-color: #EE4056;
   border-color: #EE4056;
   color: #FFF;
 }
-.button.button-pocket:hover {
+.btn-link.btn-link-pocket:hover {
   background-color: #DE142D;
   border-color: #DE142D;
 }
-.button.button-copy {
+.btn-link.btn-link-copy {
   background-color: #10B981;
   border-color: #10B981;
   color: #FFF;
 }
-.button.button-copy:hover {
+.btn-link.btn-link-copy:hover {
   background-color: #059669;
   border-color: #059669;
 }
-.button.is-rounded {
+.btn-link.is-rounded {
   border-radius: 5px;
 }
-.button svg {
+.btn-link svg {
   display: inline-block;
   width: 16px;
   height: 16px;

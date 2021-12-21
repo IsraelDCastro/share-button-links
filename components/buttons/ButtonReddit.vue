@@ -1,6 +1,6 @@
 <template>
   <a :href="`https://reddit.com/submit/?url=${url}&title=${title}`"
-     class="button button-reddit"
+     class="btn-link btn-link-reddit"
      :class="{'is-rounded': isRounded }"
      title="Reddit"
      rel="nofollow noopener" target="_blank">

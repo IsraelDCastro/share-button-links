@@ -1,6 +1,6 @@
 <template>
   <a :href="`https://api.whatsapp.com/send?text=${message}%20${url}`"
-     class="button button-whatsapp"
+     class="btn-link btn-link-whatsapp"
      :class="{'is-rounded': isRounded }"
      title="WhatsApp"
      rel="nofollow noopener" target="_blank">
@@ -23,7 +23,7 @@ const props = defineProps({
   url: {
     type: String,
     required: true,
-    default: '#'
+    default: '#!'
   },
   hasIcon: {
     type: Boolean,

@@ -1,6 +1,6 @@
 <template>
   <a :href="`https://getpocket.com/save?url=${url}&title=${title}`"
-     class="button button-pocket"
+     class="btn-link btn-link-pocket"
      :class="{'is-rounded': isRounded }"
      title="Pocket"
      rel="nofollow noopener" target="_blank">

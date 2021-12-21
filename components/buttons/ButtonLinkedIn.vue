@@ -1,6 +1,6 @@
 <template>
   <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`"
-     class="button button-linkedin"
+     class="btn-link btn-link-linkedin"
      :class="{'is-rounded': isRounded }"
      title="LinkedIn"
      rel="nofollow noopener" target="_blank">

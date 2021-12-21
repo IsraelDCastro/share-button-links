@@ -1,6 +1,6 @@
 <template>
   <a :href="`https://twitter.com/intent/tweet/?text=${title}&url=${url}`"
-     class="button button-twitter"
+     class="btn-link btn-link-twitter"
      :class="{'is-rounded': isRounded }"
      title="Twitter"
      rel="nofollow noopener" target="_blank">

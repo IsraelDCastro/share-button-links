@@ -1,6 +1,6 @@
 <template>
   <a :href="`https://facebook.com/sharer/sharer.php?u=${url}&t=&quote=`"
-     class="button button-facebook"
+     class="btn-link btn-link-facebook"
      :class="{'is-rounded': isRounded }"
      title="Facebook"
      rel="nofollow noopener" target="_blank">

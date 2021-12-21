@@ -1,6 +1,6 @@
 <template>
   <a :href="`mailto:?subject=${subject}&body=${content}%20${url}`"
-     class="button button-email"
+     class="btn-link btn-link-email"
      :class="{'is-rounded': isRounded }"
      title="Email"
      rel="nofollow noopener" target="_blank">

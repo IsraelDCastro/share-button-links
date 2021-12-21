@@ -1,6 +1,6 @@
 <template>
-  <a :href="`https://www.tumblr.com/widgets/share/tool?posttype=link&title=${title}&caption=${url}&content=${content}&canonicalUrl=${url}&shareSource=tumblr_share_button`"
-     class="button button-tumblr"
+  <a :href="`https://www.tumblr.com/widgets/share/tool?posttype=link&title=${title}&caption=${url}&content=${content}&canonicalUrl=${url}&shareSource=tumblr_share_btn-link`"
+     class="btn-link btn-link-tumblr"
      :class="{'is-rounded': isRounded }"
      title="Twitter"
      rel="nofollow noopener" target="_blank">
