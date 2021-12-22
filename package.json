@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/IsraelDCastro/share-button-links/issues"
   },
-  "homepage": "https://github.com/IsraelDCastro/share-button-links#readme"
+  "homepage": "https://github.com/IsraelDCastro/share-button-links#readme",
+  "dependencies": {
+    "vue-router": "^3.5.3"
+  }
 }
