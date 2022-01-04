@@ -28,6 +28,6 @@
   "bugs": {
     "url": "https://github.com/IsraelDCastro/share-button-links/issues"
   },
-  "homepage": "https://github.com/IsraelDCastro/share-button-links#readme",
+  "homepage": "https://share-button-links.netlify.app/",
   "dependencies": {}
 }
