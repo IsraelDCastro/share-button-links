@@ -65,6 +65,17 @@
     }
   }
 
+  &.btn-link-line {
+    background-color: $c-line-100;
+    border-color: $c-line-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-line-200;
+      border-color: $c-line-200;
+    }
+  }
+
   &.btn-link-linkedin {
     background-color: $c-linkedin-100;
     border-color: $c-linkedin-100;

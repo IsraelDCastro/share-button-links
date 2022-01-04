@@ -54,6 +54,15 @@
   background-color: #D3001F;
   border-color: #D3001F;
 }
+.btn-link.btn-link-line {
+  background-color: #00B900;
+  border-color: #00B900;
+  color: #FFF;
+}
+.btn-link.btn-link-line:hover {
+  background-color: #009B00;
+  border-color: #009B00;
+}
 .btn-link.btn-link-linkedin {
   background-color: #00A0DC;
   border-color: #00A0DC;
