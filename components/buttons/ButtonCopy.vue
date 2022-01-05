@@ -3,7 +3,7 @@
     <transition name="slide-up-fade" mode="in-out">
       <span v-if="copied" class="block absolute z-5 bottom-10 left-1/2 -translate-x-1/2">Copied!</span>
     </transition>
-    <btn-link
+    <button
        class="btn-link btn-link-copy"
        :class="{'is-rounded': isRounded }"
        title="Copy URL"
@@ -11,7 +11,7 @@
     >
       {{ text }}
       <span v-if="hasIcon"><i class="bi bi-link-45deg"></i></span>
-    </btn-link>
+    </button>
   </div>
 </template>
 

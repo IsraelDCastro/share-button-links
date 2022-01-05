@@ -1,5 +1,5 @@
 <template>
-  <a :href="`https://pinterest.com/pin/create/btn-link/?url=${url}&media=${mediaUrl}&description=${description}`"
+  <a :href="`https://pinterest.com/pin/create/button/?url=${url}&media=${mediaUrl}&description=${description}`"
      class="btn-link btn-link-pinterest"
      :class="{'is-rounded': isRounded }"
      title="Pinterest"

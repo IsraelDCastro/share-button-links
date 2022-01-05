@@ -14,7 +14,7 @@ const props = defineProps({
   title: {
     type: String,
     required: true,
-    default: 'Add text'
+    default: 'Add title'
   },
   text: {
     type: String,
