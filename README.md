@@ -10,6 +10,6 @@ Import components: `import { ButtonFacebook } from 'share-button-links/component
 
 All options: `ButtonCopy, ButtonEmail, ButtonFacebook, ButtonLinkedIn, ButtonPinterest, ButtonPocket, ButtonReddit, ButtonTumblr, ButtonTwitter, and ButtonWhatsapp`.
 
-To import the CSS or SCSS just add: `@import 'share-button-links/main.scss';` or `@import 'share-button-links/main.scss';`.
+To import the CSS or SCSS just add: `@import 'share-button-links/main.css';` or `@import 'share-button-links/main.scss';`.
 
 ### [Click to see documentation](https://share-button-links.netlify.app)

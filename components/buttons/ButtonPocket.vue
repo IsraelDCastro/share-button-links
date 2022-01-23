@@ -16,29 +16,29 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-    default: 'Add text'
-  },
-  text: {
-    type: String,
-    required: true,
-    default: 'Add text'
-  },
-  url: {
-    type: String,
-    required: true,
-    default: '#'
-  },
-  hasIcon: {
-    type: Boolean,
-    default: false
-  },
-  isRounded: {
-    type: Boolean,
-    default: false
-  }
-})
+  const props = defineProps({
+    title: {
+      type: String,
+      required: true,
+      default: 'Add text'
+    },
+    text: {
+      type: String,
+      required: true,
+      default: 'Add text'
+    },
+    url: {
+      type: String,
+      required: true,
+      default: '#'
+    },
+    hasIcon: {
+      type: Boolean,
+      default: false
+    },
+    isRounded: {
+      type: Boolean,
+      default: false
+    }
+  })
 </script>

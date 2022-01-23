@@ -14,34 +14,34 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  description: {
-    type: String,
-    default: 'Add the description',
-    required: true
-  },
-  text: {
-    type: String,
-    required: true,
-    default: 'Add text'
-  },
-  url: {
-    type: String,
-    required: true,
-    default: '#'
-  },
-  mediaUrl: {
-    type: String,
-    required: true,
-    default: '#'
-  },
-  hasIcon: {
-    type: Boolean,
-    default: false
-  },
-  isRounded: {
-    type: Boolean,
-    default: false
-  }
-})
+  const props = defineProps({
+    description: {
+      type: String,
+      default: 'Add the description',
+      required: true
+    },
+    text: {
+      type: String,
+      required: true,
+      default: 'Add text'
+    },
+    url: {
+      type: String,
+      required: true,
+      default: '#'
+    },
+    mediaUrl: {
+      type: String,
+      required: true,
+      default: '#'
+    },
+    hasIcon: {
+      type: Boolean,
+      default: false
+    },
+    isRounded: {
+      type: Boolean,
+      default: false
+    }
+  })
 </script>

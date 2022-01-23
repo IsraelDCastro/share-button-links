@@ -1,3 +1,18 @@
+.copy-wrap {
+  position: relative;
+  width: fit-content;
+}
+
+.copied-text {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  z-index: 5;
+  display: block;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .btn-link {
   display: inline-block;
   padding: 8px 32px;
@@ -115,6 +130,97 @@
   display: inline-block;
   width: 16px;
   height: 16px;
+}
+
+.btn-link-icon {
+  width: 38px;
+  height: 38px;
+  background-color: #999;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.btn-link-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.btn-link-icon.btn-link-facebook-icon {
+  background-color: #3B5998;
+  border-color: #3B5998;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-facebook-icon:hover {
+  background-color: #30487d;
+  border-color: #30487d;
+}
+.btn-link-icon.btn-link-whatsapp-icon {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-whatsapp-icon:hover {
+  background-color: #075E54;
+  border-color: #075E54;
+}
+.btn-link-icon.btn-link-twitter-icon {
+  background-color: #00ACEE;
+  border-color: #00ACEE;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-twitter-icon:hover {
+  background-color: #009DDB;
+  border-color: #009DDB;
+}
+.btn-link-icon.btn-link-linkedin-icon {
+  background-color: #00A0DC;
+  border-color: #00A0DC;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-linkedin-icon:hover {
+  background-color: #0077B5;
+  border-color: #0077B5;
+}
+.btn-link-icon.btn-link-reddit-icon {
+  background-color: #FF4500;
+  border-color: #FF4500;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-reddit-icon:hover {
+  background-color: #D33B00;
+  border-color: #D33B00;
+}
+.btn-link-icon.btn-link-pinterest-icon {
+  background-color: #E60023;
+  border-color: #E60023;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-pinterest-icon:hover {
+  background-color: #D3001F;
+  border-color: #D3001F;
+}
+.btn-link-icon.btn-link-email-icon {
+  background-color: #34B7F1;
+  border-color: #34B7F1;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-email-icon:hover {
+  background-color: #34A3F1;
+  border-color: #34A3F1;
+}
+.btn-link-icon.btn-link-copy-icon {
+  background-color: #10B981;
+  border-color: #10B981;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-copy-icon:hover {
+  background-color: #059669;
+  border-color: #059669;
+}
+.btn-link-icon.is-rounded {
+  border-radius: 5px;
 }
 
 .slide-up-fade-enter-active {

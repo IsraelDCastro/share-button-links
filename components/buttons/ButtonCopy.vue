@@ -1,7 +1,7 @@
 <template>
-  <div class="relative w-fit">
+  <div class="copy-wrap">
     <transition name="slide-up-fade" mode="in-out">
-      <span v-if="copied" class="block absolute z-5 bottom-10 left-1/2 -translate-x-1/2">Copied!</span>
+      <span v-if="copied" class="copied-text">Copied!</span>
     </transition>
     <button
        class="btn-link btn-link-copy"
