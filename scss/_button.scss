@@ -204,6 +204,17 @@
     }
   }
 
+  &.btn-link-tumblr-icon {
+    background-color: $c-tumblr-100;
+    border-color: $c-tumblr-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-tumblr-200;
+      border-color: $c-tumblr-200;
+    }
+  }
+
   &.btn-link-linkedin-icon {
     background-color: $c-linkedin-100;
     border-color: $c-linkedin-100;
