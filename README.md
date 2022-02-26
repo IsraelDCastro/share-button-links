@@ -1,14 +1,24 @@
 # Share Button Links
 
-### Installation
+## Installation
 
 You can install using `npm install share-button-links` or `yarn add share-button-links`.
 
-### Usage
+## Usage
 
-Import components: `import { ButtonFacebook } from 'share-button-links/components/buttons';`
+### Buttons
+
+Import button components: `import { ButtonFacebook } from 'share-button-links/components/buttons';`
 
 All options: `ButtonCopy, ButtonEmail, ButtonFacebook, ButtonLinkedIn, ButtonPinterest, ButtonPocket, ButtonReddit, ButtonTumblr, ButtonTwitter, and ButtonWhatsapp`.
+
+### Icon Buttons
+
+Import icon button components: `import { FacebookIcon } from 'share-button-links/components/icons';`
+
+All options: `FacebookIcon, WhatsappIcon, TwitterIcon, LinkedInIcon, RedditIcon, PinterestIcon, TumblrIcon, PocketIcon, EmailIcon, CopyIcon`.
+
+### Import CSS/SCSS
 
 To import the CSS or SCSS just add: `@import 'share-button-links/main.css';` or `@import 'share-button-links/main.scss';`.
 
