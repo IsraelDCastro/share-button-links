@@ -22,11 +22,11 @@
 
 <script setup>
   import { ref } from "vue";
-
+  let urlCopy = props.url || window.location.href
   let copied = ref(false)
   function copyUrl () {
     copied.value = true
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(urlCopy);
     setTimeout(() => copied.value = false, 1500)
   }
 
@@ -35,6 +35,9 @@
       type: String,
       required: true,
       default: 'Add text'
+    },
+    url: {
+      type: String,
     },
     hasIcon: {
       type: Boolean,
