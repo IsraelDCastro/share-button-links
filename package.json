@@ -1,6 +1,6 @@
 {
   "name": "share-button-links",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Share buttons links for websites, blogs and more.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,9 @@
     "URL",
     "Vue",
     "Vue3",
-    "VueJS"
+    "VueJS",
+    "Vue components",
+    "Components"
   ],
   "author": {
     "name": "Israel De Castro Alfonso",
