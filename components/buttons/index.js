@@ -1,7 +1,7 @@
 import ButtonCopy from './ButtonCopy.vue';
 import ButtonEmail from './ButtonEmail.vue';
 import ButtonFacebook from './ButtonFacebook.vue';
-// import ButtonLine from './ButtonLine.vue';
+import ButtonTelegram from './ButtonTelegram.vue';
 import ButtonLinkedIn from './ButtonLinkedIn.vue';
 import ButtonPinterest from './ButtonPinterest.vue';
 import ButtonPocket from './ButtonPocket.vue';
@@ -20,5 +20,6 @@ export {
 	ButtonReddit,
 	ButtonTumblr,
 	ButtonTwitter,
-	ButtonWhatsapp
+	ButtonWhatsapp,
+	ButtonTelegram
 }

@@ -8,6 +8,7 @@ import TumblrIcon from './ButtonTumblrIcon.vue';
 import PocketIcon from './ButtonPocketIcon.vue';
 import EmailIcon from './ButtonEmailIcon.vue';
 import CopyIcon from './ButtonCopyIcon.vue';
+import TelegramIcon from './ButtonTelegramIcon.vue';
 
 export {
 	FacebookIcon,
@@ -19,5 +20,6 @@ export {
 	TumblrIcon,
 	PocketIcon,
 	EmailIcon,
-	CopyIcon
+	CopyIcon,
+	TelegramIcon
 }

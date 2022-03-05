@@ -105,6 +105,15 @@
   background-color: #075E54;
   border-color: #075E54;
 }
+.btn-link.btn-link-telegram {
+  background-color: #229ED9;
+  border-color: #229ED9;
+  color: #FFF;
+}
+.btn-link.btn-link-telegram:hover {
+  background-color: #1E8CC0;
+  border-color: #1E8CC0;
+}
 .btn-link.btn-link-pocket {
   background-color: #EE4056;
   border-color: #EE4056;
@@ -164,6 +173,15 @@
 .btn-link-icon.btn-link-whatsapp-icon:hover {
   background-color: #075E54;
   border-color: #075E54;
+}
+.btn-link-icon.btn-link-telegram-icon {
+  background-color: #229ED9;
+  border-color: #229ED9;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-telegram-icon:hover {
+  background-color: #1E8CC0;
+  border-color: #1E8CC0;
 }
 .btn-link-icon.btn-link-twitter-icon {
   background-color: #00ACEE;

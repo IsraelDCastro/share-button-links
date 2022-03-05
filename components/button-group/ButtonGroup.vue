@@ -14,6 +14,13 @@
         :url="url"
       />
     </li>
+    <li v-if="telegramIcon">
+      <TelegramIcon
+        :isRounded="isRounded"
+        :message="message"
+        :url="url"
+      />
+    </li>
     <li v-if="twitterIcon">
       <TwitterIcon
         :isRounded="isRounded"
@@ -86,7 +93,8 @@
     TumblrIcon,
     PocketIcon,
     EmailIcon,
-    CopyIcon
+    CopyIcon,
+    TelegramIcon
   } from '../icons';
 
   const props = defineProps({
@@ -132,6 +140,10 @@
       default: false
     },
     whatsappIcon: {
+      type: Boolean,
+      default: false
+    },
+    telegramIcon: {
       type: Boolean,
       default: false
     },

@@ -124,6 +124,17 @@
     }
   }
 
+  &.btn-link-telegram {
+    background-color: $c-telegram-100;
+    border-color: $c-telegram-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-telegram-200;
+      border-color: $c-telegram-200;
+    }
+  }
+
   &.btn-link-pocket {
     background-color: $c-pocket-100;
     border-color: $c-pocket-100;
@@ -190,6 +201,17 @@
     &:hover {
       background-color: $c-whatsapp-200;
       border-color: $c-whatsapp-200;
+    }
+  }
+
+  &.btn-link-telegram-icon {
+    background-color: $c-telegram-100;
+    border-color: $c-telegram-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-telegram-200;
+      border-color: $c-telegram-200;
     }
   }
 
