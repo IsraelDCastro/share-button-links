@@ -270,6 +270,17 @@
     }
   }
 
+  &.btn-link-pocket-icon {
+    background-color: $c-pocket-100;
+    border-color: $c-pocket-100;
+    color: #FFF;
+
+    &:hover {
+      background-color: $c-pocket-200;
+      border-color: $c-pocket-200;
+    }
+  }
+
   &.btn-link-email-icon {
     background-color: $c-email-100;
     border-color: $c-email-100;

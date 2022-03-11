@@ -228,6 +228,15 @@
   background-color: #D3001F;
   border-color: #D3001F;
 }
+.btn-link-icon.btn-link-pocket-icon {
+  background-color: #EE4056;
+  border-color: #EE4056;
+  color: #FFF;
+}
+.btn-link-icon.btn-link-pocket-icon:hover {
+  background-color: #DE142D;
+  border-color: #DE142D;
+}
 .btn-link-icon.btn-link-email-icon {
   background-color: #34B7F1;
   border-color: #34B7F1;
