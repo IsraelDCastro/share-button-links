@@ -20,7 +20,7 @@ All options: `FacebookIcon, WhatsappIcon, TelegramIcon, TwitterIcon, LinkedInIco
 
 ### Button Group
 
-Import button group component: `import { ButtonGroup } from 'share-button-links/components/button-group';`
+Import button group component: `import ButtonGroup from 'share-button-links/components/button-group';`
 
 All options: `facebookIcon, whatsappIcon, telegramIcon, twitterIcon, linkedInIcon, redditIcon, pinterestIcon, tumblrIcon, pocketIcon, emailIcon, and copyIcon`.
 
