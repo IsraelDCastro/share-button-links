@@ -1,7 +1,11 @@
 <template>
   <a :href="`https://www.tumblr.com/widgets/share/tool?posttype=link&title=${title}&caption=${url}&content=${content}&canonicalUrl=${url}&shareSource=tumblr_share_button`"
      class="btn-link btn-link-tumblr"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered }
+     ]"
      title="Twitter"
      rel="nofollow noopener" target="_blank">
     {{ text }}
@@ -41,6 +45,14 @@
       default: false
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
       type: Boolean,
       default: false
     }

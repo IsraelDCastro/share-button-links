@@ -3,7 +3,11 @@ telegram: 'https://t.me/share/url?url=@u&text=@t%0D%0A@d',
 <template>
   <a :href="`https://t.me/share/url?url=${url}&text=${message}`"
      class="btn-link btn-link-telegram"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered }
+     ]"
      title="Telegram"
      rel="nofollow noopener" target="_blank">
     {{ text }}
@@ -36,6 +40,14 @@ const props = defineProps({
     default: false
   },
   isRounded: {
+    type: Boolean,
+    default: false
+  },
+  isCircled: {
+    type: Boolean,
+    default: false
+  },
+  isBordered: {
     type: Boolean,
     default: false
   }

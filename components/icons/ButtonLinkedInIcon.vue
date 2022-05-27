@@ -1,7 +1,12 @@
 <template>
   <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`"
      class="btn-link-icon btn-link-linkedin-icon"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
      title="LinkedIn"
      rel="nofollow noopener" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -18,6 +23,18 @@
       default: '#'
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

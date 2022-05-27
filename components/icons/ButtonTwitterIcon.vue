@@ -1,7 +1,12 @@
 <template>
   <a :href="`https://twitter.com/intent/tweet/?text=${title}&url=${url}`"
      class="btn-link-icon btn-link-twitter-icon"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
      title="Twitter"
      rel="nofollow noopener" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -23,6 +28,18 @@
       default: '#'
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

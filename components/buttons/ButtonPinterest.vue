@@ -1,7 +1,11 @@
 <template>
   <a :href="`https://pinterest.com/pin/create/button/?url=${url}&media=${mediaUrl}&description=${description}`"
      class="btn-link btn-link-pinterest"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered }
+     ]"
      title="Pinterest"
      rel="nofollow noopener" target="_blank">
     {{ text }}
@@ -40,6 +44,14 @@
       default: false
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
       type: Boolean,
       default: false
     }

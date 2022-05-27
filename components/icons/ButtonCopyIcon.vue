@@ -5,7 +5,12 @@
     </transition>
     <button
       class="btn-link-icon btn-link-copy-icon"
-      :class="{'is-rounded': isRounded }"
+      :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
       title="Copy URL"
       @click="copyUrl"
     >
@@ -31,6 +36,18 @@
       type: String,
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

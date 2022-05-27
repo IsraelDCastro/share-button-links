@@ -1,7 +1,11 @@
 <template>
   <a :href="`https://facebook.com/sharer/sharer.php?u=${url}&t=${title}&quote=`"
      class="btn-link btn-link-facebook"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered }
+     ]"
      title="Facebook"
      rel="nofollow noopener" target="_blank">
     {{ text }}
@@ -34,6 +38,14 @@
       default: false
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
       type: Boolean,
       default: false
     }

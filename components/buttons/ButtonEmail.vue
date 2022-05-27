@@ -1,7 +1,11 @@
 <template>
   <a :href="`mailto:?subject=${subject}&to=${to}&body=${content}%20${url}`"
      class="btn-link btn-link-email"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered }
+     ]"
      title="Email"
      rel="nofollow noopener" target="_blank">
     {{ text }}
@@ -44,6 +48,14 @@
       default: false
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
       type: Boolean,
       default: false
     }

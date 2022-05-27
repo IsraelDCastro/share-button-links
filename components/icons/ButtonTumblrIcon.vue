@@ -1,7 +1,12 @@
 <template>
   <a :href="`https://www.tumblr.com/widgets/share/tool?posttype=link&title=${title}&caption=${url}&content=${content}&canonicalUrl=${url}&shareSource=tumblr_share_button`"
      class="btn-link-icon btn-link-tumblr-icon"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
      title="Facebook"
      rel="nofollow noopener" target="_blank">
     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="tumblr-square"
@@ -29,6 +34,18 @@
       default: '#'
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

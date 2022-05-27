@@ -1,7 +1,11 @@
 <template>
   <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`"
      class="btn-link btn-link-linkedin"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered }
+     ]"
      title="LinkedIn"
      rel="nofollow noopener" target="_blank">
     {{ text }}
@@ -30,6 +34,14 @@
       default: false
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
       type: Boolean,
       default: false
     }

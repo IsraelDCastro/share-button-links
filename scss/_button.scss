@@ -16,8 +16,9 @@
 .btn-link {
   display: inline-block;
   padding: 8px 32px;
-  border: 1px solid #DDD;
+  border: 2px solid #DDD;
   background-color: #DDD;
+  font-weight: 500;
   text-decoration: none;
   color: #222;
   transition: all .4s ease-in-out;
@@ -35,6 +36,15 @@
       background-color: $c-fabecook-200;
       border-color: $c-fabecook-200;
     }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-fabecook-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-fabecook-200;
+      }
+    }
   }
 
   &.btn-link-email {
@@ -44,6 +54,14 @@
     &:hover {
       background-color: rgba($c-email-100, .04);
       border-color: $c-email-200;
+    }
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-email-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-email-200;
+      }
     }
   }
 
@@ -56,6 +74,15 @@
       background-color: $c-twitter-200;
       border-color: $c-twitter-200;
     }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-twitter-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-twitter-200;
+      }
+    }
   }
 
   &.btn-link-tumblr {
@@ -66,6 +93,15 @@
     &:hover {
       background-color: $c-tumblr-200;
       border-color: $c-tumblr-200;
+    }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-tumblr-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-tumblr-200;
+      }
     }
   }
 
@@ -78,18 +114,29 @@
       background-color: $c-pinterest-200;
       border-color: $c-pinterest-200;
     }
-  }
 
-  &.btn-link-line {
-    background-color: $c-line-100;
-    border-color: $c-line-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-line-200;
-      border-color: $c-line-200;
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-pinterest-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-pinterest-200;
+      }
     }
   }
+
+  //&.btn-link-line {
+  //  background-color: $c-line-100;
+  //  border-color: $c-line-100;
+  //  color: #FFF;
+  //
+  //  &:hover {
+  //    background-color: $c-line-200;
+  //    border-color: $c-line-200;
+  //  }
+  //
+  //
+  //}
 
   &.btn-link-linkedin {
     background-color: $c-linkedin-100;
@@ -99,6 +146,15 @@
     &:hover {
       background-color: $c-linkedin-200;
       border-color: $c-linkedin-200;
+    }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-linkedin-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-linkedin-200;
+      }
     }
   }
 
@@ -111,6 +167,15 @@
       background-color: $c-reddit-200;
       border-color: $c-reddit-200;
     }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-reddit-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-reddit-200;
+      }
+    }
   }
 
   &.btn-link-whatsapp {
@@ -121,6 +186,15 @@
     &:hover {
       background-color: $c-whatsapp-200;
       border-color: $c-whatsapp-200;
+    }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-whatsapp-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-whatsapp-200;
+      }
     }
   }
 
@@ -133,6 +207,15 @@
       background-color: $c-telegram-200;
       border-color: $c-telegram-200;
     }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-telegram-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-telegram-200;
+      }
+    }
   }
 
   &.btn-link-pocket {
@@ -143,6 +226,15 @@
     &:hover {
       background-color: $c-pocket-200;
       border-color: $c-pocket-200;
+    }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-pocket-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-pocket-200;
+      }
     }
   }
 
@@ -155,10 +247,23 @@
       background-color: $c-copy-200;
       border-color: $c-copy-200;
     }
+
+    &.is-bordered {
+      background-color: transparent;
+      color: $c-copy-100;
+      &:hover {
+        color: #FFF;
+        background-color: $c-copy-200;
+      }
+    }
   }
 
   &.is-rounded {
     border-radius: 5px;
+  }
+
+  &.is-circled {
+    border-radius: 20px;
   }
 
   svg {
@@ -178,6 +283,7 @@
   justify-content: center;
   padding: 4px;
   transition: all .4s ease-in-out;
+  border: 2px solid #DDD;
   svg {
     width: 24px;
     height: 24px;
@@ -306,6 +412,29 @@
   &.is-rounded {
     border-radius: 5px;
   }
+
+  &.is-circled {
+    border-radius: 50%;
+  }
+
+  &.is-bordered {
+    background-color: transparent;
+    color: inherit;
+    &:hover {
+      color: #FFF;
+    }
+  }
+
+  &.is-whited {
+    width: auto;
+    height: auto;
+    border: 0;
+    background-color: transparent;
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
 }
 
 .btn-link-group {
@@ -322,6 +451,15 @@
       svg {
         width: 20px;
         height: 20px;
+      }
+      &.is-whited {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        svg {
+          width: 26px;
+          height: 26px;
+        }
       }
     }
   }

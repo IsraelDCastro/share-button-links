@@ -1,7 +1,12 @@
 <template>
   <a :href="`https://t.me/share/url?url=${url}&text=${message}`"
      class="btn-link-icon btn-link-telegram-icon"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
      title="Telegram"
      rel="nofollow noopener" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
@@ -22,6 +27,18 @@
       default: '#!'
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

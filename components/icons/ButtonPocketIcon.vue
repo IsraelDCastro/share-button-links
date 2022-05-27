@@ -1,7 +1,12 @@
 <template>
   <a :href="`https://getpocket.com/save?url=${url}&title=${title}`"
      class="btn-link-icon btn-link-pocket-icon"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
      title="Reddit"
      rel="nofollow noopener" target="_blank">
     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="get-pocket"
@@ -25,6 +30,18 @@
       default: '#!'
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

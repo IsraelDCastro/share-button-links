@@ -3,6 +3,7 @@
     <li v-if="facebookIcon">
       <FacebookIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
       />
@@ -10,6 +11,7 @@
     <li v-if="whatsappIcon">
       <WhatsappIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :message="message"
         :url="url"
       />
@@ -17,6 +19,7 @@
     <li v-if="telegramIcon">
       <TelegramIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :message="message"
         :url="url"
       />
@@ -24,6 +27,7 @@
     <li v-if="twitterIcon">
       <TwitterIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
       />
@@ -31,12 +35,14 @@
     <li v-if="linkedInIcon">
       <LinkedInIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :url="url"
       />
     </li>
     <li v-if="redditIcon">
       <RedditIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
       />
@@ -44,6 +50,7 @@
     <li v-if="pinterestIcon">
       <PinterestIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :description="description"
         :mediaUrl="mediaUrl"
         :url="url"
@@ -52,6 +59,7 @@
     <li v-if="tumblrIcon">
       <TumblrIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :title="title"
         :content="content"
         :url="url"
@@ -60,6 +68,7 @@
     <li v-if="pocketIcon">
       <PocketIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
       />
@@ -67,6 +76,7 @@
     <li v-if="emailIcon">
       <EmailIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :to="to"
         :subject="subject"
         :content="content"
@@ -76,6 +86,7 @@
     <li v-if="copyIcon">
       <CopyIcon
         :isRounded="isRounded"
+        :isAllWhite="isAllWhite"
         :url="url"
       />
     </li>
@@ -131,10 +142,6 @@
       type: String,
       default: ''
     },
-    isRounded: {
-      type: Boolean,
-      default: false
-    },
     facebookIcon: {
       type: Boolean,
       default: false
@@ -176,6 +183,14 @@
       default: false
     },
     copyIcon: {
+      type: Boolean,
+      default: false
+    },
+    isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }

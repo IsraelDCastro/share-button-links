@@ -1,7 +1,12 @@
 <template>
   <a :href="`https://facebook.com/sharer/sharer.php?u=${url}&t=${title}&quote=`"
      class="btn-link-icon btn-link-facebook-icon"
-     :class="{'is-rounded': isRounded }"
+     :class="[
+       {'is-rounded': isRounded },
+       {'is-circled': isCircled },
+       {'is-bordered': isBordered },
+       {'is-whited': isAllWhite }
+     ]"
      title="Facebook"
      rel="nofollow noopener" target="_blank">
     <svg fill="currentColor" class="bi bi-facebook" width="24" height="24" viewBox="0 0 16 16">
@@ -22,6 +27,18 @@
       default: '#'
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
+      type: Boolean,
+      default: false
+    },
+    isAllWhite: {
       type: Boolean,
       default: false
     }
