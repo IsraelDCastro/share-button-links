@@ -3,6 +3,8 @@
     <li v-if="facebookIcon">
       <FacebookIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
@@ -11,6 +13,8 @@
     <li v-if="whatsappIcon">
       <WhatsappIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :message="message"
         :url="url"
@@ -19,6 +23,8 @@
     <li v-if="telegramIcon">
       <TelegramIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :message="message"
         :url="url"
@@ -27,6 +33,8 @@
     <li v-if="twitterIcon">
       <TwitterIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
@@ -35,6 +43,8 @@
     <li v-if="linkedInIcon">
       <LinkedInIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :url="url"
       />
@@ -42,6 +52,8 @@
     <li v-if="redditIcon">
       <RedditIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
@@ -50,6 +62,8 @@
     <li v-if="pinterestIcon">
       <PinterestIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :description="description"
         :mediaUrl="mediaUrl"
@@ -59,6 +73,8 @@
     <li v-if="tumblrIcon">
       <TumblrIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :title="title"
         :content="content"
@@ -68,6 +84,8 @@
     <li v-if="pocketIcon">
       <PocketIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :title="title"
         :url="url"
@@ -76,6 +94,8 @@
     <li v-if="emailIcon">
       <EmailIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :to="to"
         :subject="subject"
@@ -86,6 +106,8 @@
     <li v-if="copyIcon">
       <CopyIcon
         :isRounded="isRounded"
+        :isCircled="isCircled"
+        :isBordered="isBordered"
         :isAllWhite="isAllWhite"
         :url="url"
       />
@@ -187,6 +209,14 @@
       default: false
     },
     isRounded: {
+      type: Boolean,
+      default: false
+    },
+    isCircled: {
+      type: Boolean,
+      default: false
+    },
+    isBordered: {
       type: Boolean,
       default: false
     },

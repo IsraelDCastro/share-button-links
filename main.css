@@ -34,6 +34,7 @@
 .btn-link.btn-link-facebook:hover {
   background-color: #30487d;
   border-color: #30487d;
+  color: #FFF;
 }
 .btn-link.btn-link-facebook.is-bordered {
   background-color: transparent;
@@ -50,6 +51,7 @@
 .btn-link.btn-link-email:hover {
   background-color: rgba(52, 183, 241, 0.04);
   border-color: #34A3F1;
+  color: #FFF;
 }
 .btn-link.btn-link-email.is-bordered {
   background-color: transparent;
@@ -67,6 +69,7 @@
 .btn-link.btn-link-twitter:hover {
   background-color: #009DDB;
   border-color: #009DDB;
+  color: #FFF;
 }
 .btn-link.btn-link-twitter.is-bordered {
   background-color: transparent;
@@ -84,6 +87,7 @@
 .btn-link.btn-link-tumblr:hover {
   background-color: #14141D;
   border-color: #14141D;
+  color: #FFF;
 }
 .btn-link.btn-link-tumblr.is-bordered {
   background-color: transparent;
@@ -101,6 +105,7 @@
 .btn-link.btn-link-pinterest:hover {
   background-color: #D3001F;
   border-color: #D3001F;
+  color: #FFF;
 }
 .btn-link.btn-link-pinterest.is-bordered {
   background-color: transparent;
@@ -118,6 +123,7 @@
 .btn-link.btn-link-linkedin:hover {
   background-color: #0077B5;
   border-color: #0077B5;
+  color: #FFF;
 }
 .btn-link.btn-link-linkedin.is-bordered {
   background-color: transparent;
@@ -135,6 +141,7 @@
 .btn-link.btn-link-reddit:hover {
   background-color: #D33B00;
   border-color: #D33B00;
+  color: #FFF;
 }
 .btn-link.btn-link-reddit.is-bordered {
   background-color: transparent;
@@ -152,6 +159,7 @@
 .btn-link.btn-link-whatsapp:hover {
   background-color: #075E54;
   border-color: #075E54;
+  color: #FFF;
 }
 .btn-link.btn-link-whatsapp.is-bordered {
   background-color: transparent;
@@ -169,6 +177,7 @@
 .btn-link.btn-link-telegram:hover {
   background-color: #1E8CC0;
   border-color: #1E8CC0;
+  color: #FFF;
 }
 .btn-link.btn-link-telegram.is-bordered {
   background-color: transparent;
@@ -186,6 +195,7 @@
 .btn-link.btn-link-pocket:hover {
   background-color: #DE142D;
   border-color: #DE142D;
+  color: #FFF;
 }
 .btn-link.btn-link-pocket.is-bordered {
   background-color: transparent;
@@ -203,6 +213,7 @@
 .btn-link.btn-link-copy:hover {
   background-color: #059669;
   border-color: #059669;
+  color: #FFF;
 }
 .btn-link.btn-link-copy.is-bordered {
   background-color: transparent;
@@ -248,6 +259,7 @@
 .btn-link-icon.btn-link-facebook-icon:hover {
   background-color: #30487d;
   border-color: #30487d;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-facebook-icon.is-bordered {
   background-color: transparent;
@@ -265,6 +277,7 @@
 .btn-link-icon.btn-link-whatsapp-icon:hover {
   background-color: #075E54;
   border-color: #075E54;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-whatsapp-icon.is-bordered {
   background-color: transparent;
@@ -282,6 +295,7 @@
 .btn-link-icon.btn-link-telegram-icon:hover {
   background-color: #1E8CC0;
   border-color: #1E8CC0;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-telegram-icon.is-bordered {
   background-color: transparent;
@@ -299,6 +313,7 @@
 .btn-link-icon.btn-link-twitter-icon:hover {
   background-color: #009DDB;
   border-color: #009DDB;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-twitter-icon.is-bordered {
   background-color: transparent;
@@ -316,6 +331,7 @@
 .btn-link-icon.btn-link-tumblr-icon:hover {
   background-color: #14141D;
   border-color: #14141D;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-tumblr-icon.is-bordered {
   background-color: transparent;
@@ -333,6 +349,7 @@
 .btn-link-icon.btn-link-linkedin-icon:hover {
   background-color: #0077B5;
   border-color: #0077B5;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-linkedin-icon.is-bordered {
   background-color: transparent;
@@ -350,6 +367,7 @@
 .btn-link-icon.btn-link-reddit-icon:hover {
   background-color: #D33B00;
   border-color: #D33B00;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-reddit-icon.is-bordered {
   background-color: transparent;
@@ -367,6 +385,7 @@
 .btn-link-icon.btn-link-pinterest-icon:hover {
   background-color: #D3001F;
   border-color: #D3001F;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-pinterest-icon.is-bordered {
   background-color: transparent;
@@ -384,6 +403,7 @@
 .btn-link-icon.btn-link-pocket-icon:hover {
   background-color: #DE142D;
   border-color: #DE142D;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-pocket-icon.is-bordered {
   background-color: transparent;
@@ -401,6 +421,7 @@
 .btn-link-icon.btn-link-email-icon:hover {
   background-color: #34A3F1;
   border-color: #34A3F1;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-email-icon.is-bordered {
   background-color: transparent;
@@ -418,6 +439,7 @@
 .btn-link-icon.btn-link-copy-icon:hover {
   background-color: #059669;
   border-color: #059669;
+  color: #FFF;
 }
 .btn-link-icon.btn-link-copy-icon.is-bordered {
   background-color: transparent;
@@ -464,6 +486,7 @@
   width: auto;
   height: auto;
   background-color: transparent;
+  color: #FFF;
 }
 .btn-link-group li .btn-link-icon.is-whited svg {
   width: 26px;
