@@ -5,7 +5,7 @@
        {'is-rounded': isRounded },
        {'is-circled': isCircled },
        {'is-bordered': isBordered },
-       {'is-whited': isAllWhite }
+       {'is-whited': isAllWhite || isWhited }
      ]"
      title="LinkedIn"
      rel="nofollow noopener" target="_blank">
@@ -35,6 +35,10 @@
       default: false
     },
     isAllWhite: {
+      type: Boolean,
+      default: false
+    },
+    isWhited: {
       type: Boolean,
       default: false
     }

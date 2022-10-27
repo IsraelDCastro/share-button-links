@@ -460,6 +460,7 @@
   height: auto;
   border: 0;
   background-color: transparent;
+  display: inline-block;
 }
 .btn-link-icon.is-whited svg {
   width: 26px;

@@ -9,7 +9,7 @@
        {'is-rounded': isRounded },
        {'is-circled': isCircled },
        {'is-bordered': isBordered },
-       {'is-whited': isAllWhite }
+       {'is-whited': isAllWhite || isWhited }
      ]"
       title="Copy URL"
       @click="copyUrl"
@@ -48,6 +48,10 @@
       default: false
     },
     isAllWhite: {
+      type: Boolean,
+      default: false
+    },
+    isWhited: {
       type: Boolean,
       default: false
     }
