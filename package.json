@@ -1,6 +1,6 @@
 {
   "name": "share-button-links",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Share buttons links for websites, blogs and more.",
   "main": "index.js",
   "scripts": {
