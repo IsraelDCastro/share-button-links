@@ -1,0 +1,11 @@
+export { default as ButtonCopy } from "@/components/buttons/ButtonCopy.vue";
+export { default as ButtonEmail } from "@/components/buttons/ButtonEmail.vue";
+export { default as ButtonFacebook } from "@/components/buttons/ButtonFacebook.vue";
+export { default as ButtonPinterest } from "@/components/buttons/ButtonPinterest.vue";
+export { default as ButtonPocket } from "@/components/buttons/ButtonPocket.vue";
+export { default as ButtonReddit } from "@/components/buttons/ButtonReddit.vue";
+export { default as ButtonTumblr } from "@/components/buttons/ButtonTumblr.vue";
+export { default as ButtonTelegram } from "@/components/buttons/ButtonTelegram.vue";
+export { default as ButtonLinkedIn } from "@/components/buttons/ButtonLinkedIn.vue";
+export { default as ButtonTwitter } from "@/components/buttons/ButtonTwitter.vue";
+export { default as ButtonWhatsapp } from "@/components/buttons/ButtonWhatsapp.vue";

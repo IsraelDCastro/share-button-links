@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-slate-100 font-body text-base text-slate-800 leading-5;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.625em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, button, a, label{
+  @apply font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply leading-tight;
+}
+
+h1, h2, h3 {
+  @apply font-bold;
+}
+
+@media screen and (max-width: 767px){
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.875em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.375em;
+  }
+}
+
+img, svg {
+  @apply w-full h-auto;
+}
+
+.main {
+  @apply flex flex-col;
+}
+
+.wrapper {
+  @apply flex-1 relative scroll-smooth;
+}
+
+.container {
+  @apply w-11/12 mx-auto;
+}
+
+.code pre[class*="language-"] {
+  @apply text-sm mt-0 rounded;
+}
+
+.main .sidebar {
+  @apply h-fit;
+}
