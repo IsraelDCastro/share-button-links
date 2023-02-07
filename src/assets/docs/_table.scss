@@ -1,0 +1,62 @@
+.table-container {
+  -webkit-overflow-scrolling: touch;
+  @apply max-w-full overflow-auto overflow-y-hidden rounded-md;
+  &.table-shadow {
+    @apply rounded shadow bg-white;
+  }
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+table {
+  @apply w-full max-w-full overflow-hidden;
+  thead {
+    @apply bg-slate-200;
+  }
+  tbody {
+    tr {
+      @apply bg-gray-100 bg-opacity-30;
+      &:nth-child(even) {
+        @apply bg-gray-200 bg-opacity-30;
+      }
+      &:not(:last-child) {
+        @apply border-b-2 border-gray-200 ;
+      }
+    }
+  }
+  td, th {
+    @apply px-5 py-2 whitespace-nowrap;
+    &:not(:last-child) {
+      @apply border-r-2 border-gray-200 ;
+    }
+  }
+}
+
+@screen md {
+  table {
+    tbody {
+      .desc {
+        @apply w-full;
+        span {
+          @apply inline-block whitespace-normal;
+        }
+      }
+    }
+  }
+}

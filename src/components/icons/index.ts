@@ -1,0 +1,11 @@
+export { default as FacebookIcon } from "./ButtonFacebookIcon.vue";
+export { default as WhatsappIcon } from "./ButtonWhatsappIcon.vue";
+export { default as TwitterIcon } from "./ButtonTwitterIcon.vue";
+export { default as LinkedInIcon } from "./ButtonLinkedInIcon.vue";
+export { default as RedditIcon } from "./ButtonRedditIcon.vue";
+export { default as PinterestIcon } from "./ButtonPinterestIcon.vue";
+export { default as TumblrIcon } from "./ButtonTumblrIcon.vue";
+export { default as PocketIcon } from "./ButtonPocketIcon.vue";
+export { default as EmailIcon } from "./ButtonEmailIcon.vue";
+export { default as CopyIcon } from "./ButtonCopyIcon.vue";
+export { default as TelegramIcon } from "./ButtonTelegramIcon.vue";

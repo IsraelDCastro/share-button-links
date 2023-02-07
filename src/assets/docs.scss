@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@import "not-idea-ui/main";
+
+@import "docs/animation";
+@import "docs/global";
+@import "docs/table";
+
+@tailwind utilities;
