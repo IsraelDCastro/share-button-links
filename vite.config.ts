@@ -48,7 +48,7 @@ export default defineConfig({
       external: ["vue"],
       output: {
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "index.css") return "share-button-links.css";
+          if (assetInfo.name === "main.css") return "share-button-links.css";
           return assetInfo.name;
         },
         exports: "named",

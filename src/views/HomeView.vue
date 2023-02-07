@@ -4,8 +4,11 @@ import { routes } from "@/router";
 
 <template>
   <div>
-    <h3 class="mb-8"><i class="bi bi-columns-gap"></i> Components</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+    <h3 class="mb-8">
+      <i class="bi bi-columns-gap"></i>
+      Components
+    </h3>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-8">
       <div class="card" v-for="route in routes" :key="route.name" v-show="route.name !== 'Home'">
         <router-link :to="route.path">
           <div class="card-content">

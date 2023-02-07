@@ -1,7 +1,7 @@
 <template>
   <ul class="btn-link-group">
     <li v-if="facebookIcon">
-      <FacebookIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
+      <FacebookIcon :isRounded="props.isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
     </li>
     <li v-if="whatsappIcon">
       <WhatsappIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :message="message" :url="url" />
@@ -26,7 +26,8 @@
         :isAllWhite="isAllWhite"
         :description="description"
         :mediaUrl="mediaUrl"
-        :url="url" />
+        :url="url"
+      />
     </li>
     <li v-if="tumblrIcon">
       <TumblrIcon
@@ -36,7 +37,8 @@
         :isAllWhite="isAllWhite"
         :title="title"
         :content="content"
-        :url="url" />
+        :url="url"
+      />
     </li>
     <li v-if="pocketIcon">
       <PocketIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
@@ -50,7 +52,8 @@
         :to="to"
         :subject="subject"
         :content="content"
-        :url="url" />
+        :url="url"
+      />
     </li>
     <li v-if="copyIcon">
       <CopyIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :url="url" />
@@ -58,7 +61,7 @@
   </ul>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {
   FacebookIcon,
   WhatsappIcon,
@@ -73,99 +76,55 @@ import {
   TelegramIcon
 } from "../icons";
 
-const props = defineProps({
-  url: {
-    type: String,
-    required: true,
-    default: "#"
-  },
-  title: {
-    type: String,
-    default: ""
-  },
-  message: {
-    type: String,
-    default: ""
-  },
-  content: {
-    type: String,
-    default: ""
-  },
-  description: {
-    type: String,
-    default: ""
-  },
-  mediaUrl: {
-    type: String,
-    default: ""
-  },
-  to: {
-    type: String,
-    default: ""
-  },
-  subject: {
-    type: String,
-    default: ""
-  },
-  facebookIcon: {
-    type: Boolean,
-    default: false
-  },
-  whatsappIcon: {
-    type: Boolean,
-    default: false
-  },
-  telegramIcon: {
-    type: Boolean,
-    default: false
-  },
-  twitterIcon: {
-    type: Boolean,
-    default: false
-  },
-  linkedInIcon: {
-    type: Boolean,
-    default: false
-  },
-  redditIcon: {
-    type: Boolean,
-    default: false
-  },
-  pinterestIcon: {
-    type: Boolean,
-    default: false
-  },
-  tumblrIcon: {
-    type: Boolean,
-    default: false
-  },
-  pocketIcon: {
-    type: Boolean,
-    default: false
-  },
-  emailIcon: {
-    type: Boolean,
-    default: false
-  },
-  copyIcon: {
-    type: Boolean,
-    default: false
-  },
-  isRounded: {
-    type: Boolean,
-    default: false
-  },
-  isCircled: {
-    type: Boolean,
-    default: false
-  },
-  isBordered: {
-    type: Boolean,
-    default: false
-  },
-  isAllWhite: {
-    type: Boolean,
-    default: false
-  }
+interface DefaultProps {
+  url: string;
+  isRounded?: boolean;
+  isCircled?: boolean;
+  isBordered?: boolean;
+  isAllWhite?: boolean;
+  title?: string;
+  message?: string;
+  content?: string;
+  description?: string;
+  mediaUrl?: string;
+  to?: string;
+  subject?: string;
+  facebookIcon?: boolean;
+  whatsappIcon?: boolean;
+  telegramIcon?: boolean;
+  twitterIcon?: boolean;
+  linkedInIcon?: boolean;
+  redditIcon?: boolean;
+  pinterestIcon?: boolean;
+  tumblrIcon?: boolean;
+  pocketIcon?: boolean;
+  emailIcon?: boolean;
+  copyIcon?: boolean;
+}
+
+const props = withDefaults(defineProps<DefaultProps>(), {
+  url: "#",
+  isRounded: false,
+  isCircled: false,
+  isBordered: false,
+  isAllWhite: false,
+  title: "",
+  message: "",
+  content: "",
+  description: "",
+  mediaUrl: "",
+  to: "",
+  subject: "",
+  facebookIcon: false,
+  whatsappIcon: false,
+  telegramIcon: false,
+  twitterIcon: false,
+  linkedInIcon: false,
+  redditIcon: false,
+  pinterestIcon: false,
+  tumblrIcon: false,
+  pocketIcon: false,
+  emailIcon: false,
+  copyIcon: false
 });
 </script>

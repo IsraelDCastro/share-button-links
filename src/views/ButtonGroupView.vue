@@ -7,39 +7,39 @@
           <h3 class="mb-5">Installation</h3>
           <p class="mb-2">
             You can install it using
-            <span class="bg-gray-100 px-1">yarn add share-button-links</span>
+            <span class="px-1 bg-gray-100">yarn add share-button-links</span>
             or
-            <span class="bg-gray-100 px-1">npm install share-button-links</span>
+            <span class="px-1 bg-gray-100">npm install share-button-links</span>
             .
           </p>
           <p class="mb-2">To import it inside your components just add:</p>
           <Code :code="code" language="js" />
           <p class="mt-4">
             To import the CSS or SCSS just add:
-            <span class="bg-gray-100 px-1">@import 'share-button-links/main.css';</span>
+            <span class="px-1 bg-gray-100">@import 'share-button-links/main.css';</span>
             or
-            <span class="bg-gray-100 px-1">@import 'share-button-links/main.scss';</span>
+            <span class="px-1 bg-gray-100">@import 'share-button-links/main.scss';</span>
             .
           </p>
           <p>
-            <span class="text-primary-600 font-semibold">Note:</span>
+            <span class="font-semibold text-primary-600">Note:</span>
             Most of the svg icons in buttons belong to
             <a href="https://icons.getbootstrap.com/" target="_blank" class="link info">Bootstrap Icons.</a>
             and others to
             <a href="https://tablericons.com/" target="_blank" class="link info">Tabler Icons.</a>
           </p>
         </div>
-        <hr class="my-2 mx-8" />
+        <hr class="mx-8 my-2" />
         <div class="p-8">
           <p>
-            All buttons shared similar or same props as one. To check which button has an specific o share prop, please check information
-            below for more knowledge.
+            All buttons shared similar or same props as one. To check which button has an specific o share prop, please check information below for
+            more knowledge.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div class="p-5">
-              <h5 class="font-medium mb-2">Props:</h5>
+              <h5 class="mb-2 font-medium">Props:</h5>
               <p class="mb-5">All these props below are type String, and default value is empty.</p>
-              <ul class="list-disc pl-8 mb-4">
+              <ul class="pl-8 mb-4 list-disc">
                 <li>
                   <p>
                     <strong class="text-lg">url, and isRounded</strong>
@@ -90,16 +90,16 @@
             </div>
             <div>
               <div class="p-5">
-                <h5 class="font-medium mb-2">Buttons:</h5>
+                <h5 class="mb-2 font-medium">Buttons:</h5>
                 <p class="mb-5">
                   To add or active the button just use the props
                   <span class="text-blue-500">
-                    facebookIcon, whatsappIcon, telegramIcon, twitterIcon, linkedInIcon, redditIcon, pinterestIcon, tumblrIcon, pocketIcon,
-                    emailIcon, and copyIcon
+                    facebookIcon, whatsappIcon, telegramIcon, twitterIcon, linkedInIcon, redditIcon, pinterestIcon, tumblrIcon, pocketIcon, emailIcon,
+                    and copyIcon
                   </span>
                   . All this props are type boolean.
                 </p>
-                <ButtonGroup
+                <ButtonGroupIcons
                   facebookIcon
                   whatsappIcon
                   telegramIcon
@@ -112,12 +112,13 @@
                   emailIcon
                   copyIcon
                   isRounded
-                  url="https://www.youtube.com/watch?v=3_mCcDIOWCw" />
+                  url="https://www.youtube.com/watch?v=3_mCcDIOWCw"
+                />
               </div>
 
               <h5 class="mt-4 mb-2 font-medium">All icons are white.</h5>
               <div class="p-5 rounded bg-primary-700">
-                <ButtonGroup
+                <ButtonGroupIcons
                   facebookIcon
                   whatsappIcon
                   telegramIcon
@@ -131,7 +132,8 @@
                   copyIcon
                   isRounded
                   isAllWhite
-                  url="https://www.youtube.com/watch?v=3_mCcDIOWCw" />
+                  url="https://www.youtube.com/watch?v=3_mCcDIOWCw"
+                />
               </div>
             </div>
           </div>
@@ -142,11 +144,9 @@
 </template>
 
 <script setup>
-import Sidebar from "@/layouts/Sidebar.vue";
 import Navbar from "@/layouts/Navbar.vue";
-import Footer from "@/layouts/Footer.vue";
 import Code from "@/examples/Code.vue";
-import ButtonGroup from "@/components/button-group";
+import ButtonGroupIcons from "@/components/button-group";
 
 const code = `
     import ButtonGroup from 'share-button-links/components/button-group';`;

@@ -5,36 +5,37 @@
       <button
         title="Sidebar"
         @click="openSidebar"
-        class="open-sidebar flex flex-col items-end justify-center space-y-1 bg-slate-200 w-fit h-10 p-2 rounded">
-        <span class="h-1 w-6 inline-block bg-slate-700 rounded"></span>
-        <span class="h-1 w-8 inline-block bg-slate-700 rounded"></span>
-        <span class="h-1 w-7 inline-block bg-slate-700 rounded"></span>
+        class="flex flex-col items-end justify-center h-10 p-2 space-y-1 rounded open-sidebar bg-slate-200 w-fit"
+      >
+        <span class="inline-block w-6 h-1 rounded bg-slate-700"></span>
+        <span class="inline-block w-8 h-1 rounded bg-slate-700"></span>
+        <span class="inline-block h-1 rounded w-7 bg-slate-700"></span>
       </button>
     </div>
-    <div class="wrapper flex flex-wrap">
+    <div class="flex flex-wrap wrapper">
       <Sidebar />
-      <div class="bg-white content flex-1">
+      <div class="flex-1 bg-white content">
         <Navbar />
-        <div id="installation" class="mb-8 p-8">
+        <div id="installation" class="p-8 mb-8">
           <h3 class="mb-5">Installation</h3>
           <p class="mb-2">
             You can install it using
-            <span class="bg-gray-100 px-1">yarn add share-button-links</span>
+            <span class="px-1 bg-gray-100">yarn add share-button-links</span>
             or
-            <span class="bg-gray-100 px-1">npm install share-button-links</span>
+            <span class="px-1 bg-gray-100">npm install share-button-links</span>
             .
           </p>
           <p class="mb-2">To import it inside your components just add:</p>
           <Code :code="code" language="js" />
           <p class="mt-4">
             To import the CSS or SCSS just add:
-            <span class="bg-gray-100 px-1">@import 'share-button-links/main.css';</span>
+            <span class="px-1 bg-gray-100">@import 'share-button-links/main.css';</span>
             or
-            <span class="bg-gray-100 px-1">@import 'share-button-links/main.scss';</span>
+            <span class="px-1 bg-gray-100">@import 'share-button-links/main.scss';</span>
             .
           </p>
           <p>
-            <span class="text-primary-600 font-semibold">Note:</span>
+            <span class="font-semibold text-primary-600">Note:</span>
             Most of the svg icons in buttons belong to
             <a href="https://icons.getbootstrap.com/" target="_blank" class="link info">Bootstrap Icons.</a>
             and others to

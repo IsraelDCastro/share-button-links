@@ -7,7 +7,7 @@
       <ul class="menu">
         <li><router-link to="/" class="nav-link" active-class="is-active">Home</router-link></li>
         <li><router-link to="/buttons" class="nav-link" active-class="is-active">Buttons</router-link></li>
-        <li><router-link to="/buttons-icons" class="nav-link" active-class="is-active">Icon Buttons</router-link></li>
+        <li><router-link to="/icon-buttons" class="nav-link" active-class="is-active">Icon Buttons</router-link></li>
         <li><router-link to="/button-group" class="nav-link" active-class="is-active">Button Group</router-link></li>
         <li><router-link to="/styles" class="nav-link" active-class="is-active">Styles</router-link></li>
         <li>

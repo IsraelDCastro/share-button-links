@@ -7,7 +7,7 @@
           <h3>Styles for buttons</h3>
           <h6 class="mb-8">Styles for any kind of buttons.</h6>
           <hr class="my-8" />
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div>
               <h5 class="mb-2 font-semibold">Default style</h5>
               <p class="mb-5">Default style for any buttons is square, as you can see below:</p>
@@ -20,9 +20,9 @@
               <h5 class="mb-2 font-semibold">Rounded style</h5>
               <p class="mb-5">
                 You can use the
-                <span class="bg-gray-200 px-2 py-1">isRounded</span>
+                <span class="px-2 py-1 bg-gray-200">isRounded</span>
                 or
-                <span class="bg-gray-200 px-2 py-1">is-rounded</span>
+                <span class="px-2 py-1 bg-gray-200">is-rounded</span>
                 prop to add little rounded corners to the buttons as you can see below:
               </p>
               <div class="flex flex-wrap gap-4 mb-4">
@@ -34,9 +34,9 @@
               <h5 class="mb-2 font-semibold">Circled style</h5>
               <p class="mb-5">
                 You can use the
-                <span class="bg-gray-200 px-2 py-1">isCircled</span>
+                <span class="px-2 py-1 bg-gray-200">isCircled</span>
                 or
-                <span class="bg-gray-200 px-2 py-1">is-circled</span>
+                <span class="px-2 py-1 bg-gray-200">is-circled</span>
                 prop to add full-rounded corners to the buttons, also you can use it with the other styles as you can see below:
               </p>
               <div class="flex flex-wrap gap-4 mb-4">
@@ -48,9 +48,9 @@
               <h5 class="mb-2 font-semibold">Bordered style</h5>
               <p class="mb-5">
                 You can use the
-                <span class="bg-gray-200 px-2 py-1">isBordered</span>
+                <span class="px-2 py-1 bg-gray-200">isBordered</span>
                 or
-                <span class="bg-gray-200 px-2 py-1">is-bordered</span>
+                <span class="px-2 py-1 bg-gray-200">is-bordered</span>
                 prop to add only borders to the buttons as you can see below:
               </p>
               <div class="flex flex-wrap gap-4 mb-4">
@@ -75,7 +75,7 @@ import Navbar from "@/layouts/Navbar.vue";
 import Footer from "@/layouts/Footer.vue";
 import Code from "@/examples/Code.vue";
 import { ButtonFacebook } from "@/components/buttons";
-import { FacebookIcon } from "@/components/icons";
+import { FacebookIcon } from "@/components/icons/index.js";
 
 const codeDefault = `
   <ButtonFacebook

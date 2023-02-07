@@ -10,7 +10,19 @@ import {
   ButtonTumblr,
   ButtonPocket,
   ButtonEmail,
-  ButtonCopy
+  ButtonCopy,
+  FacebookIcon,
+  WhatsappIcon,
+  TwitterIcon,
+  LinkedInIcon,
+  RedditIcon,
+  PinterestIcon,
+  TumblrIcon,
+  PocketIcon,
+  EmailIcon,
+  CopyIcon,
+  TelegramIcon,
+  ButtonGroupIcons
 } from "@/components";
 
 export default {
@@ -26,7 +38,32 @@ export default {
     app.component("ButtonPocket", ButtonPocket);
     app.component("ButtonEmail", ButtonEmail);
     app.component("ButtonCopy", ButtonCopy);
+    app.component("FacebookIcon", FacebookIcon);
+    app.component("WhatsappIcon", WhatsappIcon);
+    app.component("TwitterIcon", TwitterIcon);
+    app.component("LinkedInIcon", LinkedInIcon);
+    app.component("RedditIcon", RedditIcon);
+    app.component("PinterestIcon", PinterestIcon);
+    app.component("TumblrIcon", TumblrIcon);
+    app.component("PocketIcon", PocketIcon);
+    app.component("EmailIcon", EmailIcon);
+    app.component("CopyIcon", CopyIcon);
+    app.component("TelegramIcon", TelegramIcon);
+    app.component("ButtonGroupIcons", ButtonGroupIcons);
   }
 };
 
-export { ButtonFacebook, ButtonWhatsapp };
+export {
+  ButtonFacebook,
+  ButtonWhatsapp,
+  ButtonTelegram,
+  ButtonTwitter,
+  ButtonLinkedIn,
+  ButtonReddit,
+  ButtonPinterest,
+  ButtonTumblr,
+  ButtonPocket,
+  ButtonEmail,
+  ButtonCopy,
+  ButtonGroupIcons
+};

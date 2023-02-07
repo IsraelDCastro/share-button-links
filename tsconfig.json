@@ -17,9 +17,8 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "declaration": true,
+    "rootDir": "src",
     "outDir": "dist",
-    "declarationDir": "dist",
     "baseUrl": ".",
     "paths": {
       "@/*": [
