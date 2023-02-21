@@ -1,6 +1,6 @@
 {
   "name": "share-button-links",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "Share buttons links for websites, blogs and more.",
   "main": "./dist/share-button-links.umd.js",
   "module": "./dist/share-button-links.es.js",
