@@ -65,5 +65,16 @@ export {
   ButtonPocket,
   ButtonEmail,
   ButtonCopy,
+  FacebookIcon,
+  WhatsappIcon,
+  TwitterIcon,
+  LinkedInIcon,
+  RedditIcon,
+  PinterestIcon,
+  TumblrIcon,
+  PocketIcon,
+  EmailIcon,
+  CopyIcon,
+  TelegramIcon,
   ButtonGroupIcons
 };
