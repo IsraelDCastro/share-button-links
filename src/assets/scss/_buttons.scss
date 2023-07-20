@@ -13,22 +13,22 @@
   }
 
   &.btn-link-facebook {
-    background-color: $c-fabecook-100;
-    border-color: $c-fabecook-100;
+    background-color: $c-facebook-100;
+    border-color: $c-facebook-100;
     color: #FFF;
 
     &:hover {
-      background-color: $c-fabecook-200;
-      border-color: $c-fabecook-200;
+      background-color: $c-facebook-200;
+      border-color: $c-facebook-200;
       color: #FFF;
     }
 
     &.is-bordered {
       background-color: transparent;
-      color: $c-fabecook-100;
+      color: $c-facebook-100;
       &:hover {
         color: #FFF;
-        background-color: $c-fabecook-200;
+        background-color: $c-facebook-200;
       }
     }
   }

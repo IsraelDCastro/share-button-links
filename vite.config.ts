@@ -37,7 +37,7 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: "./src/components/index.ts",
-      formats: ["es", "cjs", "umd"],
+      formats: ["es", "umd"],
       name: "ShareButtonLinks",
       fileName: (format) => `share-button-links.${format}.js`
     },
