@@ -24,7 +24,7 @@ To import the CSS or SCSS just add:
 @import "share-button-links/main.scss";
 ```
 
-<p><span class="text-primary-600 font-semibold">Note:</span> Most of the svg icons in buttons belong to <a href="https://icons.getbootstrap.com/" target="_blank" class="link info">Bootstrap Icons.</a> and others to <a href="https://tablericons.com/" target="_blank" class="link info">Tabler Icons.</a></p>
+<p><span class="font-semibold text-primary-600">Note:</span> Most of the svg icons in buttons belong to <a href="https://icons.getbootstrap.com/" target="_blank" class="link info">Bootstrap Icons.</a> and others to <a href="https://tablericons.com/" target="_blank" class="link info">Tabler Icons.</a></p>
 
 # Options
 

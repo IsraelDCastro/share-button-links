@@ -4,7 +4,6 @@ import typescript2 from "rollup-plugin-typescript2";
 import dts from "vite-plugin-dts";
 import * as path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-import sassDts from "vite-plugin-sass-dts";
 
 export default defineConfig({
   plugins: [
@@ -12,7 +11,6 @@ export default defineConfig({
     dts({
       insertTypesEntry: true
     }),
-    sassDts(),
     viteStaticCopy({
       targets: [
         { src: "src/assets/share-button-links.scss", dest: "" },
@@ -38,7 +36,7 @@ export default defineConfig({
     lib: {
       entry: "./src/components/index.ts",
       formats: ["es", "umd"],
-      name: "ShareButtonLinks",
+      name: "share-button-links",
       fileName: (format) => `share-button-links.${format}.js`
     },
     rollupOptions: {
