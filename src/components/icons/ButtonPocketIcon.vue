@@ -1,10 +1,11 @@
 <template>
   <a
-    :href="`https://getpocket.com/save?url=${props.url}&title=${title}`"
+    :href="buildPocketShareUrl(props.url, props.title)"
     class="btn-link-icon btn-link-pocket-icon"
     :class="[{ 'is-rounded': isRounded }, { 'is-circled': isCircled }, { 'is-bordered': isBordered }, { 'is-whited': isAllWhite || isWhited }]"
-    title="Reddit"
-    rel="nofollow noopener"
+    title="Share on Pocket"
+    aria-label="Share on Pocket"
+    rel="nofollow noopener noreferrer"
     target="_blank"
   >
     <svg
@@ -26,6 +27,8 @@
 </template>
 
 <script setup lang="ts">
+import { buildPocketShareUrl } from "../shared/share";
+
 interface DefaultProps {
   title: string;
   url: string;

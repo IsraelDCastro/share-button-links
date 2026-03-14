@@ -4,19 +4,16 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="w-full">
         <h4 class="mb-3 font-medium">Usage</h4>
-        <ButtonTwitter
-          text="Twitter"
-          url="Here add your URL"
-          message="Type a message here..."
-          isRounded
-          hasIcon
-          class="mb-4"
-        />
-        <Code :code="code" language="html"/>
+        <ButtonTwitter text="Twitter" url="Here add your URL" message="Type a message here..." isRounded hasIcon class="mb-4" />
+        <Code :code="code" language="html" />
       </div>
       <div class="w-full">
         <h4 class="mb-2 font-medium">Props</h4>
-        <p class="mb-3">With <span class="text-red-500">*</span> is required.</p>
+        <p class="mb-3">
+          With
+          <span class="text-red-500">*</span>
+          is required.
+        </p>
         <div class="table-container">
           <table>
             <thead>
@@ -29,7 +26,10 @@
             </thead>
             <tbody>
               <tr>
-                <td>title<span class="text-red-500">*</span></td>
+                <td>
+                  title
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Add titke</td>
                 <td class="desc">
@@ -37,7 +37,10 @@
                 </td>
               </tr>
               <tr>
-                <td>text<span class="text-red-500">*</span></td>
+                <td>
+                  text
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Add text</td>
                 <td class="desc">
@@ -45,7 +48,10 @@
                 </td>
               </tr>
               <tr>
-                <td>url<span class="text-red-500">*</span></td>
+                <td>
+                  url
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>#!</td>
                 <td class="desc">
@@ -86,5 +92,5 @@ const code = `
     url="..."
     isRounded
     hasIcon
-  />`
+  />`;
 </script>

@@ -1,14 +1,25 @@
 .copy-wrap {
   position: relative;
+  display: inline-flex;
   width: fit-content;
 }
 
 .copied-text {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: calc(100% + 0.75rem);
   left: 50%;
   z-index: 5;
-  display: block;
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.92);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+  transform: translate(-50%, 0);
 }

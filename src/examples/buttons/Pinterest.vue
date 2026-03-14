@@ -4,31 +4,32 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="w-full">
         <h4 class="mb-3 font-medium">Usage</h4>
-        <ButtonPinterest
-          text="Pinterest"
-          url="Here add your URL"
-          isRounded
-          hasIcon
-          class="mb-4"
-        />
-        <Code :code="code" language="html"/>
+        <ButtonPinterest text="Pinterest" url="Here add your URL" isRounded hasIcon class="mb-4" />
+        <Code :code="code" language="html" />
       </div>
       <div class="w-full">
         <h4 class="mb-2 font-medium">Props</h4>
-        <p class="mb-3">With <span class="text-red-500">*</span> is required.</p>
+        <p class="mb-3">
+          With
+          <span class="text-red-500">*</span>
+          is required.
+        </p>
         <div class="table-container">
-          <table >
+          <table>
             <thead>
-            <tr>
-              <th>Prop</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Comment</th>
-            </tr>
+              <tr>
+                <th>Prop</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Comment</th>
+              </tr>
             </thead>
             <tbody>
               <tr>
-                <td>description<span class="text-red-500">*</span></td>
+                <td>
+                  description
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Add the description</td>
                 <td class="desc">
@@ -36,7 +37,10 @@
                 </td>
               </tr>
               <tr>
-                <td>text<span class="text-red-500">*</span></td>
+                <td>
+                  text
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Add text</td>
                 <td class="desc">
@@ -44,7 +48,10 @@
                 </td>
               </tr>
               <tr>
-                <td>url<span class="text-red-500">*</span></td>
+                <td>
+                  url
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>#!</td>
                 <td class="desc">
@@ -52,7 +59,10 @@
                 </td>
               </tr>
               <tr>
-                <td>mediaUrl<span class="text-red-500">*</span></td>
+                <td>
+                  mediaUrl
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>#!</td>
                 <td class="desc">
@@ -93,5 +103,5 @@ const code = `
     mediaUrl="..."
     isRounded
     hasIcon
-  />`
+  />`;
 </script>

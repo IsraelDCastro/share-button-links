@@ -4,21 +4,18 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="w-full">
         <h4 class="mb-3 font-medium">Usage</h4>
-        <ButtonWhatsapp
-          text="Whatsapp"
-          url="Here add your URL"
-          message="Type a message here..."
-          isRounded
-          hasIcon
-          class="mb-4"
-        />
-        <Code :code="code" language="html"/>
+        <ButtonWhatsapp text="Whatsapp" url="Here add your URL" message="Type a message here..." isRounded hasIcon class="mb-4" />
+        <Code :code="code" language="html" />
       </div>
       <div class="w-full">
         <h4 class="mb-2 font-medium">Props</h4>
-        <p class="mb-3">With <span class="text-red-500">*</span> is required.</p>
+        <p class="mb-3">
+          With
+          <span class="text-red-500">*</span>
+          is required.
+        </p>
         <div class="table-container">
-          <table >
+          <table>
             <thead>
               <tr>
                 <th>Prop</th>
@@ -29,7 +26,10 @@
             </thead>
             <tbody>
               <tr>
-                <td>text<span class="text-red-500">*</span></td>
+                <td>
+                  text
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Add text</td>
                 <td class="desc">
@@ -37,7 +37,10 @@
                 </td>
               </tr>
               <tr>
-                <td>url<span class="text-red-500">*</span></td>
+                <td>
+                  url
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>#!</td>
                 <td class="desc">
@@ -76,14 +79,14 @@
   </div>
 </template>
 <script setup>
-  import Code from "../Code.vue";
-  import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp.vue";
-  const code = `
+import Code from "../Code.vue";
+import ButtonWhatsapp from "@/components/buttons/ButtonWhatsapp.vue";
+const code = `
   <ButtonWhatsapp
     text="..."
     url="..."
     message="..."
     isRounded
     hasIcon
-  />`
+  />`;
 </script>

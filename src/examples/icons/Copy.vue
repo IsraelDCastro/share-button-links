@@ -4,17 +4,16 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="w-full">
         <h4 class="mb-3 font-medium">Usage</h4>
-        <CopyIcon
-          title="This is the title"
-          :url="url"
-          isRounded
-          class="mb-4"
-        />
-        <Code :code="code" language="html"/>
+        <CopyIcon title="This is the title" :url="url" isRounded class="mb-4" />
+        <Code :code="code" language="html" />
       </div>
       <div class="w-full">
         <h4 class="mb-2 font-medium">Props</h4>
-        <p class="mb-3">With <span class="text-red-500">*</span> is required.</p>
+        <p class="mb-3">
+          With
+          <span class="text-red-500">*</span>
+          is required.
+        </p>
         <div class="table-container">
           <table>
             <thead>
@@ -58,5 +57,5 @@ const code = `
   <CopyIcon
     isRounded
     url="..."
-  />`
+  />`;
 </script>

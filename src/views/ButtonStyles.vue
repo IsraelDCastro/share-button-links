@@ -73,40 +73,6 @@
 <script setup>
 import Navbar from "@/layouts/Navbar.vue";
 import Footer from "@/layouts/Footer.vue";
-import Code from "@/examples/Code.vue";
 import { ButtonFacebook } from "@/components/buttons";
 import { FacebookIcon } from "@/components/icons/index.js";
-
-const codeDefault = `
-  <ButtonFacebook
-    url="..."
-    text="..."
-  />`;
-const codeDefaultIcon = `
-  <FacebookIcon
-    url="..."
-  />`;
-
-const codeRounded = `
-  <ButtonFacebook
-    url="..."
-    text="..."
-    is-rounded
-  />`;
-const codeRoundedIcon = `
-  <FacebookIcon
-    url="..."
-    is-rounded
-  />`;
-const codeCircled = `
-  <ButtonFacebook
-    url="..."
-    text="..."
-    is-rounded
-  />`;
-const codeCircledIcon = `
-  <FacebookIcon
-    url="..."
-    is-rounded
-  />`;
 </script>

@@ -1,9 +1,10 @@
 <template>
   <div class="copy-wrap">
     <transition name="slide-up-fade" mode="in-out">
-      <span v-if="copied" class="copied-text">Copied!</span>
+      <span v-if="copied" class="copied-text" role="status" aria-live="polite">Copied!</span>
     </transition>
     <button
+      type="button"
       class="btn-link-icon btn-link-copy-icon"
       :class="[
         { 'is-rounded': props.isRounded },
@@ -12,9 +13,20 @@
         { 'is-whited': isAllWhite || isWhited }
       ]"
       title="Copy URL"
+      aria-label="Copy URL to clipboard"
       @click="copyUrl"
+      @keydown="onKeyboardActivate"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-link-45deg"
+        viewBox="0 0 16 16"
+      >
         <path
           d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
         />
@@ -28,6 +40,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { copyTextToClipboard, resolveShareUrl } from "../shared/share";
 
 interface DefaultProps {
   url: string;
@@ -47,11 +60,23 @@ const props = withDefaults(defineProps<DefaultProps>(), {
   isWhited: false
 });
 
-const urlCopy = props.url || window.location.href;
 const copied = ref(false);
-function copyUrl() {
+
+async function copyUrl() {
+  const copiedText = await copyTextToClipboard(resolveShareUrl(props.url));
+  if (!copiedText) {
+    return;
+  }
+
   copied.value = true;
-  navigator.clipboard.writeText(urlCopy);
   setTimeout(() => (copied.value = false), 1500);
+}
+
+function onKeyboardActivate(event: KeyboardEvent) {
+  if (event.key !== "Enter" && event.key !== " " && event.code !== "Space") {
+    return;
+  }
+  event.preventDefault();
+  void copyUrl();
 }
 </script>

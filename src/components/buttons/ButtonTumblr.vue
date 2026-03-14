@@ -1,14 +1,14 @@
 <template>
   <a
-    :href="`https://www.tumblr.com/widgets/share/tool?posttype=link&title=${props.title}&caption=${url}&content=${content}&canonicalUrl=${url}&shareSource=tumblr_share_button`"
+    :href="buildTumblrShareUrl(props.url, props.title, props.content)"
     class="btn-link btn-link-tumblr"
     :class="[{ 'is-rounded': isRounded }, { 'is-circled': isCircled }, { 'is-bordered': isBordered }]"
-    title="Twitter"
-    rel="nofollow noopener"
+    title="Share on Tumblr"
+    rel="nofollow noopener noreferrer"
     target="_blank"
   >
     {{ text }}
-    <span v-if="hasIcon">
+    <span v-if="hasIcon" aria-hidden="true">
       <svg
         aria-hidden="true"
         focusable="false"
@@ -29,6 +29,8 @@
 </template>
 
 <script setup lang="ts">
+import { buildTumblrShareUrl } from "../shared/share";
+
 interface DefaultProps {
   text: string;
   title: string;

@@ -1,23 +1,29 @@
 .btn-link-group {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 16px;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   li {
     .btn-link-icon {
-      width: 34px;
-      height: 34px;
+      width: 2.75rem;
+      height: 2.75rem;
+
       svg {
         width: 20px;
         height: 20px;
       }
+
       &.is-whited {
         width: auto;
         height: auto;
         background-color: transparent;
-        color: #FFF;
+        color: #ffffff;
+
         svg {
           width: 26px;
           height: 26px;

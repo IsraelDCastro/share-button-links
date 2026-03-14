@@ -1,0 +1,41 @@
+@use "sass:color";
+@use "./variables" as *;
+
+@mixin variant($name, $base, $hover, $text: #FFF, $bordered-text: $base) {
+  .btn-link-#{$name},
+  .btn-link-#{$name}-icon {
+    --sbl-bg: #{$base};
+    --sbl-border: #{$base};
+    --sbl-text: #{$text};
+    --sbl-hover-bg: #{$hover};
+    --sbl-hover-border: #{$hover};
+    --sbl-hover-text: #{$text};
+    --sbl-bordered-text: #{$bordered-text};
+    --sbl-bordered-hover-bg: #{color.change($base, $alpha: 0.08)};
+    --sbl-bordered-hover-border: #{$hover};
+    --sbl-bordered-hover-text: #{$hover};
+    --sbl-flat-bg: #{color.change($base, $alpha: 0.12)};
+    --sbl-flat-border: #{color.change($base, $alpha: 0.16)};
+    --sbl-flat-text: #{$base};
+    --sbl-flat-hover-bg: #{color.change($hover, $alpha: 0.16)};
+    --sbl-flat-hover-border: #{color.change($hover, $alpha: 0.22)};
+    --sbl-flat-hover-text: #{$hover};
+    --sbl-flat-outline-border: #{color.change($base, $alpha: 0.24)};
+    --sbl-flat-outline-hover-bg: #{color.change($hover, $alpha: 0.1)};
+    --sbl-flat-outline-hover-border: #{color.change($hover, $alpha: 0.28)};
+    --sbl-flat-outline-hover-text: #{$hover};
+  }
+}
+
+@include variant("facebook", $c-facebook-100, $c-facebook-200);
+@include variant("whatsapp", $c-whatsapp-100, $c-whatsapp-200);
+@include variant("telegram", $c-telegram-100, $c-telegram-200);
+@include variant("twitter", $c-twitter-100, $c-twitter-200);
+@include variant("tumblr", $c-tumblr-100, $c-tumblr-200);
+@include variant("linkedin", $c-linkedin-100, $c-linkedin-200);
+@include variant("reddit", $c-reddit-100, $c-reddit-200);
+@include variant("pinterest", $c-pinterest-100, $c-pinterest-200);
+@include variant("pocket", $c-pocket-100, $c-pocket-200);
+@include variant("copy", $c-copy-100, $c-copy-200);
+@include variant("line", $c-line-100, $c-line-200);
+@include variant("email", $c-email-100, $c-email-200, $c-email-100, $c-email-100);

@@ -4,17 +4,16 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="w-full">
         <h4 class="mb-3 font-medium">Usage</h4>
-        <EmailIcon
-          title="This is the title"
-          :url="url"
-          isRounded
-          class="mb-4"
-        />
-        <Code :code="code" language="html"/>
+        <EmailIcon title="This is the title" :url="url" isRounded class="mb-4" />
+        <Code :code="code" language="html" />
       </div>
       <div class="w-full">
         <h4 class="mb-2 font-medium">Props</h4>
-        <p class="mb-3">With <span class="text-red-500">*</span> is required.</p>
+        <p class="mb-3">
+          With
+          <span class="text-red-500">*</span>
+          is required.
+        </p>
         <div class="table-container">
           <table>
             <thead>
@@ -35,7 +34,10 @@
                 </td>
               </tr>
               <tr>
-                <td>subject<span class="text-red-500">*</span></td>
+                <td>
+                  subject
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Subject</td>
                 <td class="desc">
@@ -43,7 +45,10 @@
                 </td>
               </tr>
               <tr>
-                <td>content<span class="text-red-500">*</span></td>
+                <td>
+                  content
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>Add the content</td>
                 <td class="desc">
@@ -51,7 +56,10 @@
                 </td>
               </tr>
               <tr>
-                <td>url<span class="text-red-500">*</span></td>
+                <td>
+                  url
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>#!</td>
                 <td class="desc">
@@ -74,16 +82,16 @@
   </div>
 </template>
 <script setup>
-  import Code from "../Code.vue";
-  import EmailIcon from "@/components/icons/ButtonEmailIcon.vue";
+import Code from "../Code.vue";
+import EmailIcon from "@/components/icons/ButtonEmailIcon.vue";
 
-  const url = window.location.href;
-  const code = `
+const url = window.location.href;
+const code = `
     <EmailIcon
       to="..."
       subject="..."
       content="..."
       url="..."
       isRounded
-    />`
+    />`;
 </script>

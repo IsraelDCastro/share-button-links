@@ -4,17 +4,16 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="w-full">
         <h4 class="mb-3 font-medium">Usage</h4>
-        <FacebookIcon
-          title="This is the title"
-          :url="url"
-          isRounded
-          class="mb-4"
-        />
-        <Code :code="code" language="html"/>
+        <FacebookIcon title="This is the title" :url="url" isRounded class="mb-4" />
+        <Code :code="code" language="html" />
       </div>
       <div class="w-full">
         <h4 class="mb-2 font-medium">Props</h4>
-        <p class="mb-3">With <span class="text-red-500">*</span> is required.</p>
+        <p class="mb-3">
+          With
+          <span class="text-red-500">*</span>
+          is required.
+        </p>
         <div class="table-container">
           <table>
             <thead>
@@ -35,7 +34,10 @@
                 </td>
               </tr>
               <tr>
-                <td>url<span class="text-red-500">*</span></td>
+                <td>
+                  url
+                  <span class="text-red-500">*</span>
+                </td>
                 <td>String</td>
                 <td>#!</td>
                 <td class="desc">
@@ -67,5 +69,5 @@ const code = `
     title="..."
     url="..."
     isRounded
-  />`
+  />`;
 </script>

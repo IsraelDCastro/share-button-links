@@ -1,257 +1,110 @@
 .btn-link {
-  display: inline-block;
-  padding: 8px 32px;
-  border: 2px solid #DDD;
-  background-color: #DDD;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 3rem;
+  padding: 0.78rem 1.25rem;
+  border: 1px solid var(--sbl-border, #cbd5e1);
+  background-color: var(--sbl-bg, #ffffff);
+  color: var(--sbl-text, #0f172a);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  color: #222;
-  transition: all .4s ease-in-out;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+
+  &:focus-visible {
+    outline: 3px solid rgba(15, 23, 42, 0.16);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px rgba(15, 23, 42, 0.08);
+  }
 
   &:hover {
-    background-color: #CCC;
+    background-color: var(--sbl-hover-bg, var(--sbl-bg, #ffffff));
+    border-color: var(--sbl-hover-border, var(--sbl-border, #cbd5e1));
+    color: var(--sbl-hover-text, var(--sbl-text, #0f172a));
   }
 
-  &.btn-link-facebook {
-    background-color: $c-facebook-100;
-    border-color: $c-facebook-100;
-    color: #FFF;
+  &.is-bordered {
+    background-color: transparent;
+    color: var(--sbl-bordered-text, var(--sbl-text, #0f172a));
 
     &:hover {
-      background-color: $c-facebook-200;
-      border-color: $c-facebook-200;
-      color: #FFF;
+      background-color: var(--sbl-bordered-hover-bg, var(--sbl-hover-bg, #f8fafc));
+      border-color: var(--sbl-bordered-hover-border, var(--sbl-hover-border, var(--sbl-border, #cbd5e1)));
+      color: var(--sbl-bordered-hover-text, var(--sbl-hover-text, var(--sbl-text, #0f172a)));
+    }
+  }
+
+  &.is-flat {
+    background-color: var(--sbl-flat-bg, #e2e8f0);
+    border-color: var(--sbl-flat-border, #e2e8f0);
+    color: var(--sbl-flat-text, #1e293b);
+
+    &:hover {
+      background-color: var(--sbl-flat-hover-bg, #cbd5e1);
+      border-color: var(--sbl-flat-hover-border, #cbd5e1);
+      color: var(--sbl-flat-hover-text, var(--sbl-flat-text, #1e293b));
     }
 
     &.is-bordered {
       background-color: transparent;
-      color: $c-facebook-100;
+      border-color: var(--sbl-flat-outline-border, var(--sbl-border, #cbd5e1));
+      color: var(--sbl-flat-text, #1e293b);
+
       &:hover {
-        color: #FFF;
-        background-color: $c-facebook-200;
+        background-color: var(--sbl-flat-outline-hover-bg, #f8fafc);
+        border-color: var(--sbl-flat-outline-hover-border, var(--sbl-flat-hover-border, #cbd5e1));
+        color: var(--sbl-flat-outline-hover-text, var(--sbl-flat-hover-text, var(--sbl-flat-text, #1e293b)));
       }
     }
   }
 
-  &.btn-link-email {
-    background-color: #FFF;
-    border-color: $c-email-100;
+  &.is-neutral {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+    color: #1e293b;
 
     &:hover {
-      background-color: rgba($c-email-100, .04);
-      border-color: $c-email-200;
-      color: #FFF;
-    }
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-email-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-email-200;
-      }
-    }
-  }
-
-  &.btn-link-twitter {
-    background-color: $c-twitter-100;
-    border-color: $c-twitter-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-twitter-200;
-      border-color: $c-twitter-200;
-      color: #FFF;
+      background-color: #f1f5f9;
+      border-color: #94a3b8;
+      color: #0f172a;
     }
 
     &.is-bordered {
       background-color: transparent;
-      color: $c-twitter-100;
+      border-color: #cbd5e1;
+      color: #1e293b;
+
       &:hover {
-        color: #FFF;
-        background-color: $c-twitter-200;
-      }
-    }
-  }
-
-  &.btn-link-tumblr {
-    background-color: $c-tumblr-100;
-    border-color: $c-tumblr-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-tumblr-200;
-      border-color: $c-tumblr-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-tumblr-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-tumblr-200;
-      }
-    }
-  }
-
-  &.btn-link-pinterest {
-    background-color: $c-pinterest-100;
-    border-color: $c-pinterest-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-pinterest-200;
-      border-color: $c-pinterest-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-pinterest-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-pinterest-200;
-      }
-    }
-  }
-
-  &.btn-link-linkedin {
-    background-color: $c-linkedin-100;
-    border-color: $c-linkedin-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-linkedin-200;
-      border-color: $c-linkedin-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-linkedin-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-linkedin-200;
-      }
-    }
-  }
-
-  &.btn-link-reddit {
-    background-color: $c-reddit-100;
-    border-color: $c-reddit-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-reddit-200;
-      border-color: $c-reddit-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-reddit-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-reddit-200;
-      }
-    }
-  }
-
-  &.btn-link-whatsapp {
-    background-color: $c-whatsapp-100;
-    border-color: $c-whatsapp-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-whatsapp-200;
-      border-color: $c-whatsapp-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-whatsapp-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-whatsapp-200;
-      }
-    }
-  }
-
-  &.btn-link-telegram {
-    background-color: $c-telegram-100;
-    border-color: $c-telegram-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-telegram-200;
-      border-color: $c-telegram-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-telegram-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-telegram-200;
-      }
-    }
-  }
-
-  &.btn-link-pocket {
-    background-color: $c-pocket-100;
-    border-color: $c-pocket-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-pocket-200;
-      border-color: $c-pocket-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-pocket-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-pocket-200;
-      }
-    }
-  }
-
-  &.btn-link-copy {
-    background-color: $c-copy-100;
-    border-color: $c-copy-100;
-    color: #FFF;
-
-    &:hover {
-      background-color: $c-copy-200;
-      border-color: $c-copy-200;
-      color: #FFF;
-    }
-
-    &.is-bordered {
-      background-color: transparent;
-      color: $c-copy-100;
-      &:hover {
-        color: #FFF;
-        background-color: $c-copy-200;
+        background-color: #f8fafc;
+        border-color: #94a3b8;
+        color: #0f172a;
       }
     }
   }
 
   &.is-rounded {
-    border-radius: 5px;
+    border-radius: 0.75rem;
   }
 
   &.is-circled {
-    border-radius: 20px;
+    border-radius: 999px;
+  }
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   svg {
     display: inline-block;
     width: 16px;
     height: 16px;
+    flex-shrink: 0;
   }
 }

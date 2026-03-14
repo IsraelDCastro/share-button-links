@@ -1,28 +1,29 @@
 <template>
   <ul class="btn-link-group">
     <li v-if="facebookIcon">
-      <FacebookIcon :isRounded="props.isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
+      <FacebookIcon :class="colorVariantClass" :isRounded="props.isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
     </li>
     <li v-if="whatsappIcon">
-      <WhatsappIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :message="message" :url="url" />
+      <WhatsappIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :message="message" :url="url" />
     </li>
     <li v-if="telegramIcon">
-      <TelegramIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :message="message" :url="url" />
+      <TelegramIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :message="message" :url="url" />
     </li>
     <li v-if="twitterIcon">
-      <TwitterIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
+      <TwitterIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
     </li>
     <li v-if="linkedInIcon">
-      <LinkedInIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :url="url" />
+      <LinkedInIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :url="url" />
     </li>
     <li v-if="redditIcon">
-      <RedditIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
+      <RedditIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
     </li>
     <li v-if="pinterestIcon">
       <PinterestIcon
         :isRounded="isRounded"
         :isCircled="isCircled"
         :isBordered="isBordered"
+        :class="colorVariantClass"
         :isAllWhite="isAllWhite"
         :description="description"
         :mediaUrl="mediaUrl"
@@ -34,6 +35,7 @@
         :isRounded="isRounded"
         :isCircled="isCircled"
         :isBordered="isBordered"
+        :class="colorVariantClass"
         :isAllWhite="isAllWhite"
         :title="title"
         :content="content"
@@ -41,13 +43,14 @@
       />
     </li>
     <li v-if="pocketIcon">
-      <PocketIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
+      <PocketIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :title="title" :url="url" />
     </li>
     <li v-if="emailIcon">
       <EmailIcon
         :isRounded="isRounded"
         :isCircled="isCircled"
         :isBordered="isBordered"
+        :class="colorVariantClass"
         :isAllWhite="isAllWhite"
         :to="to"
         :subject="subject"
@@ -56,7 +59,7 @@
       />
     </li>
     <li v-if="copyIcon">
-      <CopyIcon :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :url="url" />
+      <CopyIcon :class="colorVariantClass" :isRounded="isRounded" :isCircled="isCircled" :isBordered="isBordered" :isAllWhite="isAllWhite" :url="url" />
     </li>
   </ul>
 </template>
@@ -81,6 +84,7 @@ interface DefaultProps {
   isRounded?: boolean;
   isCircled?: boolean;
   isBordered?: boolean;
+  colorVariant?: "brand" | "flat" | "neutral";
   isAllWhite?: boolean;
   title?: string;
   message?: string;
@@ -107,6 +111,7 @@ const props = withDefaults(defineProps<DefaultProps>(), {
   isRounded: false,
   isCircled: false,
   isBordered: false,
+  colorVariant: "brand",
   isAllWhite: false,
   title: "",
   message: "",
@@ -127,4 +132,6 @@ const props = withDefaults(defineProps<DefaultProps>(), {
   emailIcon: false,
   copyIcon: false
 });
+
+const colorVariantClass = props.colorVariant === "flat" ? "is-flat" : props.colorVariant === "neutral" ? "is-neutral" : "";
 </script>

@@ -1,8 +1,9 @@
-@import "scss/variables";
-@import "scss/global";
-@import "scss/buttons";
-@import "scss/icon-buttons";
-@import "scss/button-group";
+@use "scss/variables";
+@use "scss/variants";
+@use "scss/global";
+@use "scss/buttons";
+@use "scss/icon-buttons";
+@use "scss/button-group";
 
 .slide-up-fade-enter-active {
   transition: all .3s ease-out;
@@ -16,4 +17,13 @@
 .slide-up-fade-leave-to {
   transform: translateY(20px);
   opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-link,
+  .btn-link-icon,
+  .slide-up-fade-enter-active,
+  .slide-up-fade-leave-active {
+    transition: none !important;
+  }
 }
